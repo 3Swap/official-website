@@ -12,6 +12,7 @@ export const NavWrapper = styled.div`
   top: 30px;
   border-radius: 10px;
   margin-bottom: 40px;
+  z-index: 999;
 `;
 
 export const Navcontent = styled.div`
