@@ -5,6 +5,8 @@ export const SectionWrapper = styled.div`
   width: 100%;
   display: flex;
   height: 100%;
+  background: ${({ bg }) => bg || ''};
+  color: ${({ textColor }) => textColor || ''};
   padding: 80px 0px;
 `;
 export const SectionPadding = styled.div`
@@ -28,11 +30,11 @@ export const SectionImageWrapper = styled.div`
   }
 `;
 
-export const SectionBg = styled.div`
-  width: 80%;
-  margin: 0px auto;
-  background: url(${({ bg }) => bg || ''}) no-repeat;
-  padding-bottom: 80px;
-  background-position-y: 100%;
-  background-position-x: 100%;
-`;
+// export const SectionBg = styled.div`
+//   width: 80%;
+//   margin: 0px auto;
+//   background: url(${({ bg }) => bg || ''}) no-repeat;
+//   padding-bottom: 80px;
+//   background-position-y: 100%;
+//   background-position-x: 100%;
+// `;

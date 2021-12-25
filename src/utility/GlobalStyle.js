@@ -69,8 +69,7 @@ export const Column = styled.div`
 
 export const Title = styled.div`
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
-  text-transform: ${({ uppercase }) =>
-    uppercase ? 'uppercase' : 'capitalize'};
+  text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : '')};
   color: ${({ textColor }) => textColor || 'var(--text-color)'};
   font-size: ${(props) =>
     props.size === 'sm'
@@ -79,12 +78,11 @@ export const Title = styled.div`
       ? 'var(--font-md)'
       : props.size === 'bg'
       ? 'var(--font-bg)'
-      : '16px'};
+      : '40px'};
 `;
 export const Heading = styled.div`
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
-  text-transform: ${({ uppercase }) =>
-    uppercase ? 'uppercase' : 'capitalize'};
+  text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : '')};
   font-size: ${(props) =>
     props.size === 'sm'
       ? 'var(--font-sm)'

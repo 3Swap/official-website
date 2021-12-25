@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Title } from '../../utility';
-import { Heading, Subheading } from '../../utility/GlobalStyle';
+import { Column, Heading, Subheading } from '../../utility/GlobalStyle';
+import { BrandContainer } from '../about/About.styled';
 
 export const ProductSectionWrapper = styled.div`
   background: #fff;
@@ -76,5 +77,96 @@ export const ProductDetails = styled.div`
     line-height: 20px;
     text-align: center;
     color: var(--bg-one);
+  }
+`;
+
+export const InfoSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  position: relative;
+  ${Subheading} {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 70ch;
+    color: #ccc;
+    margin-top: 8px;
+  }
+  ${Heading} {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+  }
+`;
+export const ImageWrapper = styled.div`
+  img:nth-child(1) {
+    height: 200px;
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+    top: 35%;
+  }
+  img:nth-child(2) {
+    height: 150px;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.33;
+    filter: blur(5px);
+  }
+`;
+
+export const InfoSectionWrapper = styled.div`
+  margin: 0px auto;
+  ${Title} {
+    font-size: 45px;
+    line-height: 68px;
+    span {
+      color: var(--bg-two);
+    }
+  }
+
+  ${Subheading} {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    max-width: 60ch;
+  }
+
+  ${Column} {
+    &:nth-child(1) {
+    }
+    &:nth-child(2) {
+      img {
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+`;
+
+export const SupportedBy = styled.div`
+  background: rgba(22, 32, 40, 0.5);
+  border-radius: 20px;
+  padding: 20px 30px;
+  text-align: center;
+
+  ${BrandContainer} {
+    margin-top: 0px;
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    img {
+      background: #162028;
+      border-radius: 10px;
+      padding: 10px 30px;
+    }
   }
 `;
