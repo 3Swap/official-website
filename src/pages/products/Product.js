@@ -1,7 +1,8 @@
 import React from 'react';
-import { Dart, ProductBg, ProductBg_, TimeBg, Vefi } from '../../assets';
+import { Dart, ProductBg, ProductBg_, Vefi } from '../../assets';
 import Button from '../../components/Button';
 import Image from '../../components/Image';
+import { ProductDataTwo } from '../../data/Product.data';
 import { BrandContainer } from '../../styles/about/About.styled';
 import {
   InfoSection,
@@ -63,20 +64,14 @@ const Product = (props) => {
         <Container mxWidth="lg">
           <InfoSection>
             <Title as="h1" bold uppercase textColor="var(--bg-two)">
-              Trade Anything
+              {ProductDataTwo.title}
             </Title>
-            <Heading>No registration, No hassle. </Heading>
-            <Subheading>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis
-              molestie donec nunc vitae id metus purus, sit risus. Pellentesque
-              id blandit tellus felis nulla auctor nibh. Imperdiet ultrices
-              ullamcorper enim nibh at. Risus ac iaculis orci sit molestie
-              interdum posuere enim sit.
-            </Subheading>
+            <Heading>{ProductDataTwo.subheading}</Heading>
+            <Subheading>{ProductDataTwo.description}</Subheading>
             <Button label="Trade Now" />
             <ImageWrapper>
-              <Image img={TimeBg} alt="countdown" />
-              <Image img={TimeBg} alt="countdown" />
+              <Image img={ProductDataTwo.img} alt="countdown" />
+              <Image img={ProductDataTwo.img} alt="countdown" />
             </ImageWrapper>
           </InfoSection>
         </Container>
@@ -111,7 +106,7 @@ const Product = (props) => {
           </Container>
         </InfoSectionWrapper>
       </SectionWrapper>
-      <SectionWrapper>
+      <SectionWrapper bg="var(--bg-one)">
         <Container mxWidth="md">
           <SupportedBy>
             <Heading>Supported Wallet</Heading>
