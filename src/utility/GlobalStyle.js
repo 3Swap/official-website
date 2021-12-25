@@ -44,7 +44,14 @@ export const SectionContainer = styled.div`
 `;
 export const Container = styled.div`
   width: 100%;
-  max-width: 1200px;
+  max-width: ${(props) =>
+    props.mxWidth === 'sm'
+      ? '600px'
+      : props.mxWidth === 'md'
+      ? '800px'
+      : props.mxWidth === 'lg'
+      ? '1000px'
+      : '1200px'};
   margin-left: auto;
   margin-right: auto;
 `;
