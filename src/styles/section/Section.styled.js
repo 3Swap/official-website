@@ -27,3 +27,12 @@ export const SectionImageWrapper = styled.div`
     margin-top: -80px;
   }
 `;
+
+export const SectionBg = styled.div`
+  width: 80%;
+  margin: 0px auto;
+  background: url(${({ bg }) => bg || ''}) no-repeat;
+  padding-bottom: 80px;
+  background-position-y: 100%;
+  background-position-x: 100%;
+`;

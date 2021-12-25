@@ -11,3 +11,5 @@ export { default as HaggleX } from './sponsors/haggleX.png';
 export { default as Coin_bg_left } from './images/coin_bg_left.png';
 export { default as Coin_bg_right } from './images/coin_bg_right.png';
 export { default as TokenomicsImg } from './images/card-body.png';
+export { default as ProductBg } from './images/bg_purple_rotate.png';
+export { default as ProductBg_ } from './images/bg_rotate.png';
