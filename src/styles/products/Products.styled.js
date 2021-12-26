@@ -22,14 +22,7 @@ export const ProductContainer = styled.div`
   gap: 20px;
   margin-top: 40px;
 `;
-export const ProductConent = styled.div`
-  background: #fff;
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  width: 100%;
-  padding: 20px 50px;
-  height: 320px;
-`;
+
 export const ProductLogo = styled.div`
   position: relative;
   height: 40px;
@@ -39,11 +32,16 @@ export const ProductLogo = styled.div`
   display: flex;
   margin-bottom: 20px;
   margin-top: 20px;
+  transition: all 0.8s ease-out;
   img:nth-child(1) {
     position: absolute;
     width: 60px;
     top: -8px;
     object-fit: contain;
+
+    &:hover {
+      display: none;
+    }
   }
   img:nth-child(2) {
     position: absolute;
@@ -52,12 +50,12 @@ export const ProductLogo = styled.div`
     width: 55px;
     object-fit: contain;
   }
-  img:nth-child(3) {
-    position: absolute;
-    top: -10px;
+  .icon {
     z-index: 2;
     width: 55px;
     object-fit: contain;
+    color: #fff;
+    font-size: 25px;
   }
 `;
 export const ProductHeading = styled.div`
@@ -79,7 +77,29 @@ export const ProductDetails = styled.div`
     color: var(--bg-one);
   }
 `;
-
+export const ProductConent = styled.div`
+  background: #fff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px 50px;
+  height: 320px;
+  transition: all 0.8s ease-out;
+  &:hover {
+    background: var(--bg-two);
+    transition: all 0.8s ease-out;
+    ${ProductLogo} {
+      img:nth-child(2) {
+        display: none;
+        transition: all 0.8s ease-out;
+      }
+    }
+    .icon {
+      color: var(--bg-two);
+      transition: all 0.8s ease-out;
+    }
+  }
+`;
 export const InfoSection = styled.div`
   display: flex;
   flex-direction: column;

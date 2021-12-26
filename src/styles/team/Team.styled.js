@@ -7,6 +7,7 @@ export const SectionTeamContainer = styled.div`
   text-align: center;
   justify-content: center;
   height: 100%;
+  padding-bottom: 80px;
 `;
 
 export const TeamMeber = styled.div`

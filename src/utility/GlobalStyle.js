@@ -82,6 +82,7 @@ export const Title = styled.div`
 `;
 export const Heading = styled.div`
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
+  color: ${({ textColor }) => textColor || ''};
   text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : '')};
   font-size: ${(props) =>
     props.size === 'sm'
@@ -125,9 +126,16 @@ export const Button = styled.button`
   text-transform: capitalize;
   text-align: center;
   font-weight: 500;
+  transition: all 300ms ease-out;
   > .icon {
     font-size: 24px;
     padding-right: 5px;
+  }
+
+  &:hover {
+    transition: all 300ms ease-out;
+    background: ${({ hoverBg }) => hoverBg || ''};
+    color: ${({ hoverColor }) => hoverColor || 'var(--bg-one)'};
   }
 `;
 export const SectionLink = styled.a``;

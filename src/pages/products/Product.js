@@ -45,7 +45,7 @@ const Product = (props) => {
                 <ProductLogo>
                   <Image img={ProductBg_} alt="image" />
                   <Image img={ProductBg} alt="image" />
-                  {/* {product.icon} */}
+                  {<product.icon className="icon" />}
                 </ProductLogo>
                 <ProductHeading>
                   <Heading as="h1" bold>
@@ -68,7 +68,13 @@ const Product = (props) => {
             </Title>
             <Heading>{ProductDataTwo.subheading}</Heading>
             <Subheading>{ProductDataTwo.description}</Subheading>
-            <Button label="Trade Now" />
+            <Button
+              label="Trade Now"
+              bgColor="var(--bg-two)"
+              textColor="var(--text-color)"
+              hoverBg="var(--text-color)"
+              hoverColor="var(--bg-one)"
+            />
             <ImageWrapper>
               <Image img={ProductDataTwo.img} alt="countdown" />
               <Image img={ProductDataTwo.img} alt="countdown" />
@@ -96,6 +102,8 @@ const Product = (props) => {
                     label="Buy Now"
                     bgColor="var(--bg-two)"
                     textColor="var(--text-color)"
+                    hoverBg="var(--text-color)"
+                    hoverColor="var(--bg-one)"
                   />
                 </SectionPadding>
               </Column>

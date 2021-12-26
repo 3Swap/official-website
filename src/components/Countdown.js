@@ -6,7 +6,8 @@ import {
   CountdownHeading,
   Timer,
 } from '../styles/countdown/Countdown.styled';
-import { Button, Heading } from '../utility/GlobalStyle';
+import { Heading } from '../utility/GlobalStyle';
+import Button from './Button';
 
 const Countdown = () => {
   return (
@@ -35,7 +36,13 @@ const Countdown = () => {
             </Timer>
           </CountdownContainer>
         </CountdownWrapper>
-        <Button label="Buy now" />
+        <Button
+          label="Buy now"
+          bgColor="var(--bg-two)"
+          textColor="var(--text-color)"
+          hoverBg="var(--text-color)"
+          hoverColor="var(--bg-one)"
+        />
       </CountdownContainerWrapper>
     </>
   );

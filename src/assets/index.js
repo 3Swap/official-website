@@ -21,3 +21,4 @@ export { default as Team_3 } from './team/team_3.png';
 export { default as Team_4 } from './team/team_4.png';
 export { default as Team_5 } from './team/team_5.png';
 export { default as Team_6 } from './team/team_6.png';
+export { default as FooterLogoBg } from './images/footer_logo.png';

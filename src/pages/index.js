@@ -1,6 +1,8 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { Aboutus } from '../data';
+import { FooterData } from '../data/Footer.data';
 import { ProductData } from '../data/Product.data';
 import { TeamData } from '../data/Team.data';
 
@@ -20,6 +22,7 @@ const Home = () => {
       <Roadmap />
       <Product {...ProductData} />
       <Team {...TeamData} />
+      <Footer {...FooterData} />
     </>
   );
 };

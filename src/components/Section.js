@@ -24,7 +24,13 @@ const Section = (props) => {
                 <Subheading as="p" size="sm">
                   {props.description}
                 </Subheading>
-                <Button label="Buy Now" />
+                <Button
+                  label="Test Demo App"
+                  bgColor="var(--bg-two)"
+                  textColor="var(--text-color)"
+                  hoverBg="var(--text-color)"
+                  hoverColor="var(--bg-one)"
+                />
               </SectionPadding>
             </Column>
             <Column flex="0.5">
