@@ -33,7 +33,7 @@ import {
 const Product = (props) => {
   return (
     <>
-      <ProductSectionWrapper>
+      <ProductSectionWrapper id="feature">
         <Container mxWidth="lg">
           <Title as="h1" bold uppercase textColor="var(--bg-two)">
             {props.heading}
@@ -82,7 +82,7 @@ const Product = (props) => {
           </InfoSection>
         </Container>
       </SectionWrapper>
-      <SectionWrapper bg="#fff" textColor="var(--bg-one)">
+      <SectionWrapper bg="#fff" textColor="var(--bg-one)" id="ico">
         <InfoSectionWrapper>
           <Container>
             <Row>

@@ -6,7 +6,7 @@ import { Container } from '../../utility/GlobalStyle';
 const Roadmap = () => {
   return (
     <>
-      <RoadmapWrapper>
+      <RoadmapWrapper id="roadmap">
         <SectionWrapper>
           <Container>
             <h1>Roadmap</h1>

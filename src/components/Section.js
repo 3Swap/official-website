@@ -13,7 +13,7 @@ import Countdown from './Countdown';
 const Section = (props) => {
   return (
     <>
-      <SectionWrapper>
+      <SectionWrapper id="home">
         <Container>
           <Row>
             <Column flex="0.5">

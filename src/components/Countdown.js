@@ -23,16 +23,16 @@ const Countdown = () => {
               <span>Days</span>
             </Timer>
             <Timer>
-              <span>20</span>
-              <span>Days</span>
+              <span>15</span>
+              <span>Hrs</span>
             </Timer>
             <Timer>
-              <span>20</span>
-              <span>Days</span>
+              <span>04</span>
+              <span>Mins</span>
             </Timer>
             <Timer>
-              <span>20</span>
-              <span>Days</span>
+              <span>45</span>
+              <span>Secs</span>
             </Timer>
           </CountdownContainer>
         </CountdownWrapper>

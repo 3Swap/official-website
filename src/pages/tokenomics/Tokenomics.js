@@ -14,7 +14,7 @@ import { Column, Container, Row } from '../../utility/GlobalStyle';
 
 const Tokenomics = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="token">
       <Container mxWidth="lg">
         <TokenomicsContainer>
           <Title as="h1" bold>

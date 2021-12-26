@@ -8,5 +8,6 @@ export {
   FiGithub,
   FiInstagram,
 } from 'react-icons/fi';
-
-export { FaDiscord, FaYoutube, FaTelegramPlane } from 'react-icons/fa';
+export { Link as LinkRouter } from 'react-router-dom';
+export { Link as LinkScroll } from 'react-scroll';
+export { FaDiscord, FaYoutube, FaTelegramPlane, FaBars } from 'react-icons/fa';

@@ -25,7 +25,7 @@ import {
 const About = (props) => {
   return (
     <>
-      <AboutWrapper>
+      <AboutWrapper id="about">
         <SectionContainer>
           <Container>
             <Row>

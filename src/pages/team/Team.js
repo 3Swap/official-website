@@ -15,7 +15,7 @@ import { FiLinkedin, FiTwitter, FiGithub } from '../../utility';
 const Team = (props) => {
   return (
     <>
-      <SectionWrapper bg="var(--bg-three)">
+      <SectionWrapper bg="var(--bg-three)" id="team">
         <Container mxWidth="lg">
           <SectionTeamContainer>
             <Title as="h1" bold uppercase>
