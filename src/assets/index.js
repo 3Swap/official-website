@@ -1,4 +1,4 @@
-export { default as HerosectionImg } from './images/herosection_img_1.png';
+export { default as HerosectionImg } from './images/herosection_img_1.webp';
 export { default as Star } from './images/star.png';
 export { default as LogoBg } from './images/logo_bg.svg';
 export { default as DownloadIcon } from './icons/download.svg';
@@ -13,8 +13,8 @@ export { default as Coin_bg_right } from './images/coin_bg_right.png';
 export { default as TokenomicsImg } from './images/card-body.png';
 export { default as ProductBg } from './images/bg_purple_rotate.png';
 export { default as ProductBg_ } from './images/bg_rotate.png';
-export { default as TimeBg } from './images/time.png';
-export { default as Dart } from './images/dart.png';
+export { default as TimeBg } from './images/time.webp';
+export { default as Dart } from './images/dart.webp';
 export { default as Team_1 } from './team/team_1.png';
 export { default as Team_2 } from './team/team_2.png';
 export { default as Team_3 } from './team/team_3.png';
