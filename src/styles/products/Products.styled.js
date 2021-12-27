@@ -154,6 +154,15 @@ export const InfoSection = styled.div`
       font-weight: 600;
     }
   }
+  @media screen and (max-width: 768px) {
+    text-align: center;
+
+    ${Title} {
+      font-size: 2.5rem;
+      line-height: 50px;
+      padding-bottom: 10px;
+    }
+  }
 `;
 export const ImageWrapper = styled.div`
   img:nth-child(1) {
@@ -201,7 +210,7 @@ export const InfoSectionWrapper = styled.div`
     }
     @media screen and (max-width: 768px) {
       text-align: center;
-      font-size: 55px;
+      font-size: 3rem;
       padding-bottom: 10px;
     }
   }
@@ -263,8 +272,9 @@ export const SupportedBy = styled.div`
       @media screen and (max-width: 768px) {
         padding: 0px;
         background: transparent;
-        width: 100px;
+        width: 90px;
         height: 50px;
+        margin: 0px auto;
         object-fit: contain;
       }
     }

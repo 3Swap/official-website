@@ -12,6 +12,21 @@ export const FooterContainer = styled.div`
     line-height: 21px;
     font-weight: normal;
     max-width: 30ch;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      padding-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 80px 30px;
+    flex-direction: column;
+
+    ${Column} {
+      &:first-child {
+        text-align: center;
+      }
+    }
   }
 `;
 export const FooterLogo = styled.div`
@@ -19,6 +34,9 @@ export const FooterLogo = styled.div`
     width: 100px;
     height: 40px;
     object-fit: contain;
+    @media screen and (max-width: 768px) {
+      /* height:60px; */
+    }
   }
 `;
 export const FooterSocialIcon = styled.div`
@@ -35,6 +53,11 @@ export const FooterLinkWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+  }
 `;
 export const FooterLink = styled.div`
   display: flex;

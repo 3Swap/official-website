@@ -11,6 +11,7 @@ import {
   TeamMeberInfo,
 } from '../../styles/team/Team.styled';
 import { FiLinkedin, FiTwitter, FiGithub } from '../../utility';
+import Image from '../../components/Image';
 
 const Team = (props) => {
   return (
@@ -23,28 +24,43 @@ const Team = (props) => {
             </Title>
             <TeamContainer>
               {props.team.map((user, i) => (
-                <TeamMeber bg={user.pics} key={i}>
-                  <SocialIcon>
-                    {user.socialLink.twitter && (
-                      <Icon href={user.socialLink.twitter} target="_blank">
-                        <FiTwitter />
-                      </Icon>
-                    )}
-                    {user.socialLink.linkedln && (
-                      <Icon href={user.socialLink.linkedln} target="_blank">
-                        <FiLinkedin />
-                      </Icon>
-                    )}
-                    {user.socialLink.github && (
-                      <Icon href={user.socialLink.github} target="_blank">
-                        <FiGithub />
-                      </Icon>
-                    )}
-                  </SocialIcon>
-                  <TeamMeberInfo>
-                    <Heading>{user.name}</Heading>
-                    <Subheading>{user.position}</Subheading>
-                  </TeamMeberInfo>
+                <TeamMeber key={i}>
+                  <Image img={user.pics} alt={user.name} className="teamImg" />
+                  <div className="team">
+                    <SocialIcon>
+                      {user.socialLink.twitter && (
+                        <Icon
+                          href={user.socialLink.twitter}
+                          target="_blank"
+                          className="icon"
+                        >
+                          <FiTwitter />
+                        </Icon>
+                      )}
+                      {user.socialLink.linkedln && (
+                        <Icon
+                          href={user.socialLink.linkedln}
+                          target="_blank"
+                          className="icon"
+                        >
+                          <FiLinkedin />
+                        </Icon>
+                      )}
+                      {user.socialLink.github && (
+                        <Icon
+                          href={user.socialLink.github}
+                          target="_blank"
+                          className="icon"
+                        >
+                          <FiGithub />
+                        </Icon>
+                      )}
+                    </SocialIcon>
+                    <TeamMeberInfo>
+                      <Heading>{user.name}</Heading>
+                      <Subheading>{user.position}</Subheading>
+                    </TeamMeberInfo>
+                  </div>
                 </TeamMeber>
               ))}
             </TeamContainer>
