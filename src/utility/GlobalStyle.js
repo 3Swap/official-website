@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     --font-sm:12.75px;
     --font-md:24px;
     --font-bg:4rem;
+    --font-mb:16px;
 }
 html,body{
     background: radial-gradient(19.57% 100% at 6.55% 9.79%, rgba(0, 115, 180, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
@@ -61,6 +62,10 @@ export const Row = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Column = styled.div`

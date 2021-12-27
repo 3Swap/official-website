@@ -14,6 +14,10 @@ export const ProductSectionWrapper = styled.div`
   ${Title} {
     font-size: 40px;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 80px 20px;
+  }
 `;
 
 export const ProductContainer = styled.div`
@@ -21,6 +25,10 @@ export const ProductContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 40px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const ProductLogo = styled.div`
@@ -75,6 +83,11 @@ export const ProductDetails = styled.div`
     line-height: 20px;
     text-align: center;
     color: var(--bg-one);
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 25px;
+    }
   }
 `;
 export const ProductConent = styled.div`
@@ -83,7 +96,7 @@ export const ProductConent = styled.div`
   border-radius: 20px;
   width: 100%;
   padding: 20px 50px;
-  height: 320px;
+  height: 100%;
   transition: all 0.8s ease-out;
   &:hover {
     background: var(--bg-two);
@@ -94,10 +107,16 @@ export const ProductConent = styled.div`
         transition: all 0.8s ease-out;
       }
     }
+    ${Subheading} {
+      color: #fff;
+    }
     .icon {
       color: var(--bg-two);
       transition: all 0.8s ease-out;
     }
+  }
+  @media screen and (max-width: 768px) {
+    height: 100%;
   }
 `;
 export const InfoSection = styled.div`
@@ -114,11 +133,26 @@ export const InfoSection = styled.div`
     max-width: 70ch;
     color: #ccc;
     margin-top: 8px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
   }
   ${Heading} {
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    padding: 30px;
+
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: 600;
+    }
   }
 `;
 export const ImageWrapper = styled.div`
@@ -128,6 +162,12 @@ export const ImageWrapper = styled.div`
     position: absolute;
     left: 0;
     top: 35%;
+
+    @media screen and (max-width: 768px) {
+      height: 150px;
+      top: 65%;
+      opacity: 0.5;
+    }
   }
   img:nth-child(2) {
     height: 150px;
@@ -142,19 +182,40 @@ export const ImageWrapper = styled.div`
 
 export const InfoSectionWrapper = styled.div`
   margin: 0px auto;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+
+    button {
+      text-align: center;
+      width: 100%;
+      font-size: var(--font-mb);
+      font-weight: 600;
+      padding: 15px 0px;
+    }
+  }
   ${Title} {
     font-size: 45px;
     line-height: 68px;
     span {
       color: var(--bg-two);
     }
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      font-size: 55px;
+      padding-bottom: 10px;
+    }
   }
 
   ${Subheading} {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     max-width: 60ch;
+
+    @media screen and (max-width: 768px) {
+      font-size: var(--font-mb);
+      line-height: 26px;
+    }
   }
 
   ${Column} {
@@ -165,6 +226,11 @@ export const InfoSectionWrapper = styled.div`
         height: 300px;
         width: 100%;
         object-fit: contain;
+
+        @media screen and (max-width: 768px) {
+          height: 400px;
+          margin-top: -50px;
+        }
       }
     }
   }
@@ -176,6 +242,12 @@ export const SupportedBy = styled.div`
   padding: 20px 30px;
   text-align: center;
 
+  @media screen and (max-width: 768px) {
+    ${Heading} {
+      font-size: var(--font-md);
+      font-weight: 600;
+    }
+  }
   ${BrandContainer} {
     margin-top: 0px;
     background: none;
@@ -187,6 +259,23 @@ export const SupportedBy = styled.div`
       background: #162028;
       border-radius: 10px;
       padding: 10px 30px;
+
+      @media screen and (max-width: 768px) {
+        padding: 0px;
+        background: transparent;
+        width: 100px;
+        height: 50px;
+        object-fit: contain;
+      }
     }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 0px;
+    background: transparent;
   }
 `;

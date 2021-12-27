@@ -5,6 +5,11 @@ export const CountdownContainerWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    padding: 0px 20px;
+  }
 `;
 export const CountdownWrapper = styled.div`
   display: flex;
@@ -19,6 +24,10 @@ export const CountdownWrapper = styled.div`
   text-align: center;
   border-radius: 20px;
   padding: 20px 20px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 export const CountdownHeading = styled.div`
   ${Heading} {
@@ -26,6 +35,11 @@ export const CountdownHeading = styled.div`
     font-weight: bold;
     font-size: 30px;
     color: var(--text-color);
+  }
+  @media screen and (max-width: 768px) {
+    ${Heading} {
+      font-size: 20px;
+    }
   }
 `;
 export const CountdownContainer = styled.div`
@@ -47,5 +61,9 @@ export const Timer = styled.div`
   > span:last-child {
     font-size: 10px;
     color: #fff;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 `;

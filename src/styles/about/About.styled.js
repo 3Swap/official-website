@@ -22,9 +22,22 @@ export const AboutWrapper = styled.div`
   ${Column} {
     &:first-child {
       padding-left: 50px;
+      @media screen and (max-width: 768px) {
+        padding: 0px 20px;
+
+        button {
+          width: 100%;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 15px 25px;
+        }
+      }
     }
     &:last-child {
       position: relative;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
   ${Box} {
@@ -32,6 +45,10 @@ export const AboutWrapper = styled.div`
       position: absolute;
       top: -70px;
       right: 100px;
+      @media screen and (max-width: 768px) {
+        top: 0;
+        right: -10px;
+      }
     }
     &:nth-child(3) {
       position: absolute;
@@ -48,6 +65,9 @@ export const AboutWrapper = styled.div`
     font-size: 70px;
     line-height: 105px;
     text-shadow: 2px 7px 10px rgba(11, 19, 25, 0.2);
+    @media screen and (max-width: 768px) {
+      font-size: 80px;
+    }
   }
   ${Subheading} {
     font-size: 14px;
@@ -56,6 +76,11 @@ export const AboutWrapper = styled.div`
     margin-bottom: 5px;
     padding-left: 8px;
     font-style: normal;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
   ${SectionImageWrapper} {
     background-position-y: -25%;
@@ -67,6 +92,11 @@ export const AboutWrapper = styled.div`
       object-fit: contain;
       margin-top: 0px;
       filter: drop-shadow(2px 7px 10px rgba(11, 19, 25, 0.2));
+    }
+    @media screen and (max-width: 768px) {
+      padding: 40px 0px;
+      background-position-y: -10%;
+      background-position-x: -80%;
     }
   }
 `;

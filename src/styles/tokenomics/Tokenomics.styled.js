@@ -11,10 +11,18 @@ export const TokenomicsContainer = styled.div`
     font-size: 40px;
     line-height: 60px;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+      padding-bottom: 10px;
+    }
   }
 
   ${Column} {
     margin-right: 20px;
+    @media screen and (max-width: 768px) {
+      margin: 0px;
+    }
   }
 `;
 
@@ -30,17 +38,19 @@ export const WrapperContainer = styled.div`
   background: url(${({ bg }) => bg || ''}) no-repeat;
 
   background-size: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
   &:last-child {
     background-position-x: 65%;
     background-position-y: 100%;
     background-size: 35%;
     margin-top: 50px;
-    /* transform: rotate(28.22deg); */
-
-    /* .legend {
-      transform: rotate(360deg);
-    } */
+    @media screen and (max-width: 768px) {
+      background-size: none;
+      background-position-x: 75%;
+    }
   }
 
   &:first-child {
@@ -50,6 +60,15 @@ export const WrapperContainer = styled.div`
       object-fit: contain;
       margin-left: 80px;
       margin-top: 80px;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 0px;
+      }
+    }
+  }
+  .column {
+    @media screen and (max-width: 768px) {
+      flex: 1;
     }
   }
 `;

@@ -8,6 +8,10 @@ export const SectionTeamContainer = styled.div`
   justify-content: center;
   height: 100%;
   padding-bottom: 80px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const TeamMeber = styled.div`
@@ -24,6 +28,10 @@ export const TeamContainer = styled.div`
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 30px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 2fr);
+  }
 `;
 export const SocialIcon = styled.div`
   background: #0b131a;
@@ -39,6 +47,10 @@ export const SocialIcon = styled.div`
   position: absolute;
   right: 0;
   padding: 20px 0px;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+  }
 `;
 export const TeamMeberInfo = styled.div`
   position: absolute;
