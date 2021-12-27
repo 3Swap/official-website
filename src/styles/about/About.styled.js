@@ -78,8 +78,7 @@ export const AboutWrapper = styled.div`
     font-style: normal;
 
     @media screen and (max-width: 768px) {
-      font-size: 18px;
-      line-height: 30px;
+      line-height: 25px;
     }
   }
   ${SectionImageWrapper} {
