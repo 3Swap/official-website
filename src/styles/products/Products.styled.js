@@ -85,8 +85,8 @@ export const ProductDetails = styled.div`
     color: var(--bg-one);
 
     @media screen and (max-width: 768px) {
-      font-size: 14px;
-      line-height: 25px;
+      font-size: 12px;
+      line-height: 20px;
     }
   }
 `;
