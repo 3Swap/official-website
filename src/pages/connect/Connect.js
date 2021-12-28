@@ -6,6 +6,7 @@ import {
   Image,
   Button,
   SelectWallet,
+  CoinSetting,
   Sidebar,
 } from '../../components';
 import { FooterData } from '../../data';
@@ -33,8 +34,12 @@ import {
 const ConnectWallet = () => {
   const [showModal, setShowModal] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [showSetting, setShowSetting] = useState(false);
   const openModal = () => {
     setShowModal((prev) => !prev);
+  };
+  const openSetting = () => {
+    setShowSetting((prev) => !prev);
   };
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -42,6 +47,7 @@ const ConnectWallet = () => {
   return (
     <>
       <SelectWallet showModal={showModal} setShowModal={setShowModal} />
+      <CoinSetting showSetting={showSetting} setShowSetting={setShowSetting} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <ConnectWalletWrapper>
@@ -52,7 +58,7 @@ const ConnectWallet = () => {
                 swap
               </Heading>
               <span>
-                <Image img={SettingImg} alt="setting" />
+                <Image img={SettingImg} alt="setting" onClick={openSetting} />
               </span>
             </ConnectWalletHeading>
             <ConnectWalletFromContainer>
@@ -152,7 +158,7 @@ const ConnectWallet = () => {
               <ContainerHeading>
                 <Heading as="h3">Transaction Setting</Heading>
                 <Heading as="h3">
-                  <Image img={SettingImg} alt="setting" />
+                  <Image img={SettingImg} alt="setting" onClick={openSetting} />
                 </Heading>
               </ContainerHeading>
               <ContainerHeading>

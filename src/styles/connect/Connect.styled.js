@@ -45,6 +45,10 @@ export const ContainerHeading = styled.div`
   justify-content: space-between;
   ${Heading} {
     font-size: 12px;
+
+    img {
+      cursor: pointer;
+    }
   }
 `;
 export const ConnectWalletFromContainer = styled.div`

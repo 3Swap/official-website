@@ -162,10 +162,10 @@ export const ModalWrapper = styled.div`
     props.mxWidth === 'sm'
       ? '400px'
       : props.mxWidth === 'md'
-      ? '800px'
+      ? '600px'
       : props.mxWidth === 'lg'
-      ? '1000px'
-      : '1200px'};
+      ? '800px'
+      : '1000px'};
   margin-left: auto;
   margin-right: auto;
   background: #0b131a;
