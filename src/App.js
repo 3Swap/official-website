@@ -1,8 +1,13 @@
+import { Routes, Route } from 'react-router-dom';
+import { Home, ConnectWallet } from './pages';
 function App() {
   return (
-    <div className="app">
-      <h1>3 Swap Official Website</h1>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/connect" element={<ConnectWallet />}></Route>
+      </Routes>
+    </>
   );
 }
 
