@@ -1,4 +1,4 @@
-import { Team_1, Team_2, Team_3, Team_4, Team_5, Team_6 } from '../assets';
+import { Team_1, Team_2, Team_3, Team_4 } from '../assets';
 export const TeamData = {
   team: [
     {
@@ -40,26 +40,26 @@ export const TeamData = {
         linkedln: 'https://www.linkedin.com/',
         github: 'https://github.com/'
       }
-    },
-    {
-      name: 'Team Member 5',
-      position: 'Chief Operating Officer',
-      pics: Team_5,
-      socialLink: {
-        twitter: 'https://www.twitter.com/',
-        linkedln: 'https://www.linkedin.com/',
-        github: 'https://github.com/'
-      }
-    },
-    {
-      name: 'Team Member 5',
-      position: 'Lead Product Design',
-      pics: Team_6,
-      socialLink: {
-        twitter: 'https://www.twitter.com/',
-        linkedln: 'https://www.linkedin.com/',
-        github: 'https://github.com/'
-      }
     }
+    // {
+    //   name: 'Team Member 5',
+    //   position: 'Chief Operating Officer',
+    //   pics: Team_5,
+    //   socialLink: {
+    //     twitter: 'https://www.twitter.com/',
+    //     linkedln: 'https://www.linkedin.com/',
+    //     github: 'https://github.com/'
+    //   }
+    // },
+    // {
+    //   name: 'Team Member 5',
+    //   position: 'Lead Product Design',
+    //   pics: Team_6,
+    //   socialLink: {
+    //     twitter: 'https://www.twitter.com/',
+    //     linkedln: 'https://www.linkedin.com/',
+    //     github: 'https://github.com/'
+    //   }
+    // }
   ]
 };
