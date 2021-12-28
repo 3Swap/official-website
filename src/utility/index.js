@@ -9,7 +9,7 @@ export {
   FiInstagram,
   FiChevronDown,
   FiArrowDown,
-  FiX,
+  FiX
 } from 'react-icons/fi';
 export { Link as LinkRouter } from 'react-router-dom';
 export { Link as LinkScroll } from 'react-scroll';

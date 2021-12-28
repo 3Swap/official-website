@@ -8,12 +8,12 @@ import {
   SocialIcon,
   TeamContainer,
   TeamMeber,
-  TeamMeberInfo,
+  TeamMeberInfo
 } from '../../../styles/team/Team.styled';
 import { FiLinkedin, FiTwitter, FiGithub } from '../../../utility';
 import Image from '../../../components/Image';
 
-const Team = (props) => {
+const Team = props => {
   return (
     <>
       <SectionWrapper bg="var(--bg-three)" id="team">
@@ -29,29 +29,17 @@ const Team = (props) => {
                   <div className="team">
                     <SocialIcon>
                       {user.socialLink.twitter && (
-                        <Icon
-                          href={user.socialLink.twitter}
-                          target="_blank"
-                          className="icon"
-                        >
+                        <Icon href={user.socialLink.twitter} target="_blank" className="icon">
                           <FiTwitter />
                         </Icon>
                       )}
                       {user.socialLink.linkedln && (
-                        <Icon
-                          href={user.socialLink.linkedln}
-                          target="_blank"
-                          className="icon"
-                        >
+                        <Icon href={user.socialLink.linkedln} target="_blank" className="icon">
                           <FiLinkedin />
                         </Icon>
                       )}
                       {user.socialLink.github && (
-                        <Icon
-                          href={user.socialLink.github}
-                          target="_blank"
-                          className="icon"
-                        >
+                        <Icon href={user.socialLink.github} target="_blank" className="icon">
                           <FiGithub />
                         </Icon>
                       )}

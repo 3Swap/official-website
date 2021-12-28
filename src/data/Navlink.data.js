@@ -5,28 +5,28 @@ export const NavLinks = [
   // },
   {
     label: 'About',
-    path: 'about',
+    path: 'about'
   },
   {
     label: 'Tokenomics',
-    path: 'token',
+    path: 'token'
   },
   {
     label: 'Roadmap',
-    path: 'roadmap',
+    path: 'roadmap'
   },
   {
     label: 'Features',
-    path: 'feature',
+    path: 'feature'
   },
   {
     label: 'ICO',
-    path: 'ico',
+    path: 'ico'
   },
   {
     label: 'Team',
-    path: 'team',
-  },
+    path: 'team'
+  }
 
   // {
   //   label: "FAQ",

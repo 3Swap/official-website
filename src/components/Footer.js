@@ -6,20 +6,14 @@ import {
   FooterLinkWrapper,
   FooterLogo,
   FooterSocialIcon,
-  Link,
+  Link
 } from '../styles/footer/Footer.styled';
 import { SectionWrapper } from '../styles/section/Section.styled';
 import { Icon } from '../styles/team/Team.styled';
-import {
-  Column,
-  Container,
-  Heading,
-  Row,
-  Subheading,
-} from '../utility/GlobalStyle';
+import { Column, Container, Heading, Row, Subheading } from '../utility/GlobalStyle';
 import Image from './Image';
 
-const Footer = (props) => {
+const Footer = props => {
   return (
     <SectionWrapper>
       <Container mxWidth="lg">
@@ -30,8 +24,7 @@ const Footer = (props) => {
                 <Image img={FooterLogoBg} alt="footer logo" />
               </FooterLogo>
               <Subheading as="p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                error dolores optio delectus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error dolores optio delectus.
               </Subheading>
               <FooterSocialIcon>
                 {props.socialLink.map((link, i) => (
@@ -79,7 +72,7 @@ const Footer = (props) => {
               width: '100%',
               fontSize: '11px',
               color: '#CECECE',
-              opacity: '0.4',
+              opacity: '0.4'
             }}
           >
             &copy; 3SWAP, All Rights Reserved

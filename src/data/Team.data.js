@@ -8,8 +8,8 @@ export const TeamData = {
       socialLink: {
         twitter: 'https://www.twitter.com/',
         linkedln: 'https://www.linkedin.com/',
-        github: 'https://github.com/',
-      },
+        github: 'https://github.com/'
+      }
     },
     {
       name: 'Team Member 2',
@@ -18,8 +18,8 @@ export const TeamData = {
       socialLink: {
         twitter: 'https://www.twitter.com/',
         linkedln: 'https://www.linkedin.com/',
-        github: 'https://github.com/',
-      },
+        github: 'https://github.com/'
+      }
     },
     {
       name: 'Team Member 3',
@@ -28,8 +28,8 @@ export const TeamData = {
       socialLink: {
         twitter: 'https://www.twitter.com/',
         linkedln: 'https://www.linkedin.com/',
-        github: 'https://github.com/',
-      },
+        github: 'https://github.com/'
+      }
     },
     {
       name: 'Team Member 4',
@@ -38,8 +38,8 @@ export const TeamData = {
       socialLink: {
         twitter: 'https://www.twitter.com/',
         linkedln: 'https://www.linkedin.com/',
-        github: 'https://github.com/',
-      },
+        github: 'https://github.com/'
+      }
     },
     {
       name: 'Team Member 5',
@@ -48,8 +48,8 @@ export const TeamData = {
       socialLink: {
         twitter: 'https://www.twitter.com/',
         linkedln: 'https://www.linkedin.com/',
-        github: 'https://github.com/',
-      },
+        github: 'https://github.com/'
+      }
     },
     {
       name: 'Team Member 5',
@@ -58,8 +58,8 @@ export const TeamData = {
       socialLink: {
         twitter: 'https://www.twitter.com/',
         linkedln: 'https://www.linkedin.com/',
-        github: 'https://github.com/',
-      },
-    },
-  ],
+        github: 'https://github.com/'
+      }
+    }
+  ]
 };

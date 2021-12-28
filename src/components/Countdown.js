@@ -4,7 +4,7 @@ import {
   CountdownContainer,
   CountdownWrapper,
   CountdownHeading,
-  Timer,
+  Timer
 } from '../styles/countdown/Countdown.styled';
 import { Heading } from '../utility/GlobalStyle';
 import Button from './Button';

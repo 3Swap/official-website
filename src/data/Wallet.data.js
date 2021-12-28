@@ -1,19 +1,19 @@
 export const WalletProvider = [
   {
-    name: 'Metamask',
+    name: 'Metamask'
   },
   {
-    name: 'Trust Wallet',
+    name: 'Trust Wallet'
   },
   {
-    name: 'OntoWallet',
+    name: 'OntoWallet'
   },
   {
-    name: 'Ledger',
+    name: 'Ledger'
   },
   {
-    name: 'MathWallet',
-  },
+    name: 'MathWallet'
+  }
   //   {
   //     name: 'Metamask',
   //   },
