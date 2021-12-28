@@ -14,23 +14,14 @@ import {
   ProductSectionWrapper,
   ImageWrapper,
   InfoSectionWrapper,
-  SupportedBy,
+  SupportedBy
 } from '../../../styles/products/Products.styled';
-import {
-  SectionPadding,
-  SectionWrapper,
-} from '../../../styles/section/Section.styled';
+import { SectionPadding, SectionWrapper } from '../../../styles/section/Section.styled';
 
 import { Title } from '../../../utility';
-import {
-  Column,
-  Container,
-  Heading,
-  Row,
-  Subheading,
-} from '../../../utility/GlobalStyle';
+import { Column, Container, Heading, Row, Subheading } from '../../../utility/GlobalStyle';
 
-const Product = (props) => {
+const Product = props => {
   return (
     <>
       <ProductSectionWrapper id="feature">
@@ -92,11 +83,9 @@ const Product = (props) => {
                     <span>Participate</span> in our ICO
                   </Title>
                   <Subheading as="p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ultrices netus sit quis sapien.Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Ultrices netus sit quis
-                    sapien.Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Ultrices netus sit quis sapien.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices netus sit quis sapien.Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Ultrices netus sit quis sapien.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Ultrices netus sit quis sapien.
                   </Subheading>
                   <Button
                     label="Buy Now"

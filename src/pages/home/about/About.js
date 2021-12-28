@@ -4,11 +4,7 @@ import { Coin_1, Coin_2 } from '../../../assets';
 import Button from '../../../components/Button';
 import Image from '../../../components/Image';
 import { Sponsors } from '../../../data/Sponsor.data';
-import {
-  AboutWrapper,
-  Box,
-  BrandContainer,
-} from '../../../styles/about/About.styled';
+import { AboutWrapper, Box, BrandContainer } from '../../../styles/about/About.styled';
 import { SectionImageWrapper } from '../../../styles/section/Section.styled';
 import {
   Row,
@@ -19,10 +15,10 @@ import {
   Title,
   ButtonWrapper,
   Subheading,
-  SectionLink,
+  SectionLink
 } from '../../../utility/GlobalStyle';
 
-const About = (props) => {
+const About = props => {
   return (
     <>
       <AboutWrapper id="about">
@@ -38,11 +34,7 @@ const About = (props) => {
                 </Title>
                 <Subheading as="p">{props.description}</Subheading>
                 <ButtonWrapper>
-                  <Button
-                    label="learn more"
-                    hoverBg="var(--bg-two)"
-                    hoverColor="var(--text-color)"
-                  />
+                  <Button label="learn more" hoverBg="var(--bg-two)" hoverColor="var(--text-color)" />
                   <Button
                     label="Whitepaper"
                     bgColor="var(--bg-two)"

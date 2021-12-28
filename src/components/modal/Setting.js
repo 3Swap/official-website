@@ -6,19 +6,14 @@ import {
   ModalContent,
   ModalTextContent,
   ModalAdjustContainer,
-  AdjustWrapper,
+  AdjustWrapper
 } from '../../styles/modal/Modal.styled';
-import {
-  Background,
-  ModalWrapper,
-  Heading,
-  Subheading,
-} from '../../utility/GlobalStyle';
+import { Background, ModalWrapper, Heading, Subheading } from '../../utility/GlobalStyle';
 
 const CoinSetting = ({ showSetting, setShowSetting }) => {
   const modalRef = useRef();
 
-  const closeModal = (e) => {
+  const closeModal = e => {
     if (modalRef.current === e.target) {
       setShowSetting(false);
     }
@@ -32,10 +27,7 @@ const CoinSetting = ({ showSetting, setShowSetting }) => {
             <ModalHeader>
               <Heading>&nbsp;</Heading>
               <ModalClose>
-                <FiX
-                  className="icon"
-                  onClick={() => setShowSetting((prev) => !prev)}
-                />
+                <FiX className="icon" onClick={() => setShowSetting(prev => !prev)} />
               </ModalClose>
             </ModalHeader>
             <ModalContent>
@@ -43,10 +35,7 @@ const CoinSetting = ({ showSetting, setShowSetting }) => {
                 <Heading as="h1" bold>
                   Adjust slippage tolerance
                 </Heading>
-                <Subheading>
-                  Slippage is the price difference between original and executed
-                  order. More info
-                </Subheading>
+                <Subheading>Slippage is the price difference between original and executed order. More info</Subheading>
               </ModalTextContent>
               <ModalAdjustContainer>
                 <AdjustWrapper>

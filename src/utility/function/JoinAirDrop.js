@@ -1,3 +1,3 @@
 export const JoinAirDrop = () => {
-  console.log("Join Air Drop");
+  console.log('Join Air Drop');
 };

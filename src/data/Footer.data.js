@@ -1,48 +1,40 @@
-import {
-  FiFacebook,
-  FiLinkedin,
-  FiTwitter,
-  FiInstagram,
-  FaDiscord,
-  FaYoutube,
-  FaTelegramPlane,
-} from '../utility';
+import { FiFacebook, FiLinkedin, FiTwitter, FiInstagram, FaDiscord, FaYoutube, FaTelegramPlane } from '../utility';
 export const FooterData = {
   socialLink: [
     {
       label: 'facebook',
       icon: FiFacebook,
-      url: '/',
+      url: '/'
     },
     {
       label: 'linkedln',
       icon: FiLinkedin,
-      url: '/',
+      url: '/'
     },
     {
       label: 'twitter',
       icon: FiTwitter,
-      url: '/',
+      url: '/'
     },
     {
       label: 'instgram',
       icon: FiInstagram,
-      url: '/',
+      url: '/'
     },
     {
       label: 'discord',
       icon: FaDiscord,
-      url: '/',
+      url: '/'
     },
     {
       label: 'youtube',
       icon: FaYoutube,
-      url: '/',
+      url: '/'
     },
     {
       label: 'telegram',
       icon: FaTelegramPlane,
-      url: '/',
-    },
-  ],
+      url: '/'
+    }
+  ]
 };

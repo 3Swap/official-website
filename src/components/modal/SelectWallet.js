@@ -1,11 +1,6 @@
 import React, { useRef } from 'react';
 import { FiX } from '../../utility';
-import {
-  ModalHeader,
-  ModalClose,
-  ModalContent,
-  ListItem,
-} from '../../styles/modal/Modal.styled';
+import { ModalHeader, ModalClose, ModalContent, ListItem } from '../../styles/modal/Modal.styled';
 import { Background, ModalWrapper, Heading } from '../../utility/GlobalStyle';
 import { WalletProvider } from '../../data';
 import { Button } from '../index';
@@ -13,7 +8,7 @@ import { Button } from '../index';
 const SelectWallet = ({ showModal, setShowModal }) => {
   const modalRef = useRef();
 
-  const closeModal = (e) => {
+  const closeModal = e => {
     if (modalRef.current === e.target) {
       setShowModal(false);
     }
@@ -27,15 +22,12 @@ const SelectWallet = ({ showModal, setShowModal }) => {
             <ModalHeader>
               <Heading>Select Wallet</Heading>
               <ModalClose>
-                <FiX
-                  className="icon"
-                  onClick={() => setShowModal((prev) => !prev)}
-                />
+                <FiX className="icon" onClick={() => setShowModal(prev => !prev)} />
               </ModalClose>
             </ModalHeader>
             <ModalContent>
               {WalletProvider.map((provider, i) => (
-                <ListItem onClick={() => setShowModal((prev) => !prev)} key={i}>
+                <ListItem onClick={() => setShowModal(prev => !prev)} key={i}>
                   {provider.name}
                 </ListItem>
               ))}
@@ -46,7 +38,7 @@ const SelectWallet = ({ showModal, setShowModal }) => {
               textColor="var(--text-color)"
               hoverBg="var(--text-color)"
               hoverColor="var(--bg-one)"
-              onClick={() => setShowModal((prev) => !prev)}
+              onClick={() => setShowModal(prev => !prev)}
             />
           </ModalWrapper>
         </Background>

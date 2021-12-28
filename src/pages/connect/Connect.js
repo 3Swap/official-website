@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
 import { SettingImg, Threeswap } from '../../assets';
-import {
-  Navbar,
-  Footer,
-  Image,
-  Button,
-  SelectWallet,
-  CoinSetting,
-  Sidebar,
-} from '../../components';
+import { Navbar, Footer, Image, Button, SelectWallet, CoinSetting, Sidebar } from '../../components';
 import { FooterData } from '../../data';
 import { FiChevronDown, FiArrowDown } from '../../utility';
 import {
@@ -22,24 +14,19 @@ import {
   ContainerHeading,
   SelectCoinContainer,
   ConnectSwap,
-  ConnectCoinInfo,
+  ConnectCoinInfo
 } from '../../styles/connect/Connect.styled';
-import {
-  Column,
-  Container,
-  Heading,
-  Subheading,
-} from '../../utility/GlobalStyle';
+import { Column, Container, Heading, Subheading } from '../../utility/GlobalStyle';
 
 const ConnectWallet = () => {
   const [showModal, setShowModal] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [showSetting, setShowSetting] = useState(false);
   const openModal = () => {
-    setShowModal((prev) => !prev);
+    setShowModal(prev => !prev);
   };
   const openSetting = () => {
-    setShowSetting((prev) => !prev);
+    setShowSetting(prev => !prev);
   };
   const toggle = () => {
     setIsOpen(!isOpen);

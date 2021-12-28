@@ -1,22 +1,12 @@
 import React from 'react';
 import Image from './Image';
-import {
-  SectionImageWrapper,
-  SectionWrapper,
-  SectionPadding,
-} from '../styles/section/Section.styled';
+import { SectionImageWrapper, SectionWrapper, SectionPadding } from '../styles/section/Section.styled';
 import { Title } from '../utility';
-import {
-  Row,
-  Column,
-  Container,
-  Subheading,
-  NavLink,
-} from '../utility/GlobalStyle';
+import { Row, Column, Container, Subheading, NavLink } from '../utility/GlobalStyle';
 import Button from './Button';
 import Countdown from './Countdown';
 
-const Section = (props) => {
+const Section = props => {
   return (
     <>
       <SectionWrapper id="home">

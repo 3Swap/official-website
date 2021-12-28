@@ -46,14 +46,8 @@ export const SectionContainer = styled.div`
 `;
 export const Container = styled.div`
   width: 100%;
-  max-width: ${(props) =>
-    props.mxWidth === 'sm'
-      ? '600px'
-      : props.mxWidth === 'md'
-      ? '800px'
-      : props.mxWidth === 'lg'
-      ? '1000px'
-      : '1200px'};
+  max-width: ${props =>
+    props.mxWidth === 'sm' ? '600px' : props.mxWidth === 'md' ? '800px' : props.mxWidth === 'lg' ? '1000px' : '1200px'};
   margin-left: auto;
   margin-right: auto;
 `;
@@ -77,7 +71,7 @@ export const Title = styled.div`
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
   text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : '')};
   color: ${({ textColor }) => textColor || 'var(--text-color)'};
-  font-size: ${(props) =>
+  font-size: ${props =>
     props.size === 'sm'
       ? 'var(--font-sm)'
       : props.size === 'md'
@@ -90,7 +84,7 @@ export const Heading = styled.div`
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
   color: ${({ textColor }) => textColor || ''};
   text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : '')};
-  font-size: ${(props) =>
+  font-size: ${props =>
     props.size === 'sm'
       ? 'var(--font-sm)'
       : props.size === 'md'
@@ -100,9 +94,8 @@ export const Heading = styled.div`
       : '16px'};
 `;
 export const Subheading = styled.div`
-  text-transform: ${({ uppercase }) =>
-    uppercase ? 'uppercase' : 'capitalize'};
-  font-size: ${(props) =>
+  text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'capitalize')};
+  font-size: ${props =>
     props.size === 'sm'
       ? 'var(--font-sm)'
       : props.size === 'md'
@@ -158,14 +151,8 @@ export const Background = styled.div`
 `;
 export const ModalWrapper = styled.div`
   width: 100%;
-  max-width: ${(props) =>
-    props.mxWidth === 'sm'
-      ? '400px'
-      : props.mxWidth === 'md'
-      ? '600px'
-      : props.mxWidth === 'lg'
-      ? '800px'
-      : '1000px'};
+  max-width: ${props =>
+    props.mxWidth === 'sm' ? '400px' : props.mxWidth === 'md' ? '600px' : props.mxWidth === 'lg' ? '800px' : '1000px'};
   margin-left: auto;
   margin-right: auto;
   background: #0b131a;
