@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { About, Tokenomics, Product, Team, Roadmap } from './index';
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
-import Section from '../../components/Section';
+
+import { Footer, Sidebar, Navbar, Section } from '../../components';
+
 import { Aboutus } from '../../data';
 import { FooterData } from '../../data/Footer.data';
 import { HeroSectionData } from '../../data/HeroSection';
@@ -10,9 +10,15 @@ import { ProductData } from '../../data/Product.data';
 import { TeamData } from '../../data/Team.data';
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
-      <Navbar />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
       <Section {...HeroSectionData} />
       <About {...Aboutus} />
       <Tokenomics />

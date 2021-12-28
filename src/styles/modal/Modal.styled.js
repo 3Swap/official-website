@@ -37,4 +37,9 @@ export const ListItem = styled.div`
     border: 1px solid var(--bg-two);
     transition: all 300ms ease-out;
   }
+
+  @media screen and (max-width: 768px) {
+    margin: 20px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
 `;

@@ -33,6 +33,7 @@ const Navbar = ({ toggle }) => {
                   <FaBars className="icon" />
                 </MobileIcon>
                 <NavMenu>
+                  <NavLink to="/">Home</NavLink>
                   {Navigation.map(({ label, path }, i) => (
                     <NavItem key={i}>
                       <NavLinks

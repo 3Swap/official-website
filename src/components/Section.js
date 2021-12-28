@@ -6,7 +6,13 @@ import {
   SectionPadding,
 } from '../styles/section/Section.styled';
 import { Title } from '../utility';
-import { Row, Column, Container, Subheading } from '../utility/GlobalStyle';
+import {
+  Row,
+  Column,
+  Container,
+  Subheading,
+  NavLink,
+} from '../utility/GlobalStyle';
 import Button from './Button';
 import Countdown from './Countdown';
 
@@ -24,13 +30,15 @@ const Section = (props) => {
                 <Subheading as="p" size="sm">
                   {props.description}
                 </Subheading>
-                <Button
-                  label="Test Demo App"
-                  bgColor="var(--bg-two)"
-                  textColor="var(--text-color)"
-                  hoverBg="var(--text-color)"
-                  hoverColor="var(--bg-one)"
-                />
+                <NavLink to="/connect">
+                  <Button
+                    label="Test Demo App"
+                    bgColor="var(--bg-two)"
+                    textColor="var(--text-color)"
+                    hoverBg="var(--text-color)"
+                    hoverColor="var(--bg-one)"
+                  />
+                </NavLink>
               </SectionPadding>
             </Column>
             <Column flex="0.5">

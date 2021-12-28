@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button, Column } from '../../utility/GlobalStyle';
+import { Button, Column, NavLink } from '../../utility/GlobalStyle';
 import { LinkRouter, LinkScroll } from '../../utility';
 export const NavWrapper = styled.div`
   height: 60px;
@@ -26,12 +26,15 @@ export const Navcontent = styled.div`
   ${Column} {
     &:nth-child(1) {
       margin-left: 30px;
-
+      img {
+        margin-top: 8px;
+      }
       @media screen and (max-width: 768px) {
         img {
           position: relative;
           margin-top: 5px;
-          left: -150px;
+          left: -180px;
+          text-align: left;
         }
       }
     }
@@ -75,6 +78,16 @@ export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
+
+  ${NavLink} {
+    color: var(--text-color);
+    padding: 0 1rem;
+    transition: all 300ms ease-out;
+    &:hover {
+      transition: all 300ms ease-out;
+      color: var(--bg-two);
+    }
+  }
   @media screen and (max-width: 768px) {
     display: none;
   }
