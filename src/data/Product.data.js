@@ -8,21 +8,21 @@ export const ProductData = {
       title: 'Heading One',
       icon: BsTv,
       description:
-        'Lorem ipsum dolor sit amet consectetur ipisicing elit. Vitae libero nobis officia temporibus quam rem dolorem ratione quibusdam, deleniti tempora est recusandae quasi neque et odit cum fugiat vero impedit.',
+        'Lorem ipsum dolor sit amet consectetur ipisicing elit. Vitae libero nobis officia temporibus quam rem dolorem ratione quibusdam, deleniti tempora est recusandae quasi neque et odit cum fugiat vero impedit.'
     },
     {
       title: 'Heading Two',
       icon: BsTv,
       description:
-        'Lorem ipsum dolor sit amet consectetur ipisicing elit. Vitae libero nobis officia temporibus quam rem dolorem ratione quibusdam, deleniti tempora est recusandae quasi neque et odit cum fugiat vero impedit.',
+        'Lorem ipsum dolor sit amet consectetur ipisicing elit. Vitae libero nobis officia temporibus quam rem dolorem ratione quibusdam, deleniti tempora est recusandae quasi neque et odit cum fugiat vero impedit.'
     },
     {
       title: 'Heading Three',
       icon: BsTv,
       description:
-        'Lorem ipsum dolor sit amet consectetur ipisicing elit. Vitae libero nobis officia temporibus quam rem dolorem ratione quibusdam, deleniti tempora est recusandae quasi neque et odit cum fugiat vero impedit.',
-    },
-  ],
+        'Lorem ipsum dolor sit amet consectetur ipisicing elit. Vitae libero nobis officia temporibus quam rem dolorem ratione quibusdam, deleniti tempora est recusandae quasi neque et odit cum fugiat vero impedit.'
+    }
+  ]
 };
 
 export const ProductDataTwo = {
@@ -30,5 +30,5 @@ export const ProductDataTwo = {
   subheading: 'No registration, No hassle.',
   img: TimeBg,
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis molestie donec nunc vitae id metus purus, sit risus. Pellentesque id blandit tellus felis nulla auctor nibh. Imperdiet ultrices ullamcorper enim nibh at. Risus ac iaculis orci sit molestie interdum posuere enim sit.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis molestie donec nunc vitae id metus purus, sit risus. Pellentesque id blandit tellus felis nulla auctor nibh. Imperdiet ultrices ullamcorper enim nibh at. Risus ac iaculis orci sit molestie interdum posuere enim sit.'
 };

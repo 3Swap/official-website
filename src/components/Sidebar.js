@@ -7,7 +7,7 @@ import {
   SidebarMenu,
   SidebarLink,
   SidebarBtnWrap,
-  SidebarBtn,
+  SidebarBtn
 } from '../styles/sidebar/Sidebar.styled';
 import { Button } from './index';
 import { NavLinks } from '../data/Navlink.data';

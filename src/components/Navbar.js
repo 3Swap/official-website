@@ -3,15 +3,7 @@ import Image from './Image';
 import { Logo } from '../assets';
 import { FaBars } from '../utility';
 
-import {
-  MobileIcon,
-  NavBtn,
-  Navcontent,
-  NavItem,
-  NavLinks,
-  NavMenu,
-  NavWrapper,
-} from '../styles/navbar/Navbar.styled';
+import { MobileIcon, NavBtn, Navcontent, NavItem, NavLinks, NavMenu, NavWrapper } from '../styles/navbar/Navbar.styled';
 import { NavLinks as Navigation } from '../data/Navlink.data';
 import { Column, Container, NavLink, Row } from '../utility/GlobalStyle';
 import Button from './Button';
@@ -36,13 +28,7 @@ const Navbar = ({ toggle }) => {
                   <NavLink to="/">Home</NavLink>
                   {Navigation.map(({ label, path }, i) => (
                     <NavItem key={i}>
-                      <NavLinks
-                        to={path}
-                        smooth={true}
-                        duration={300}
-                        spy={true}
-                        exact="true"
-                      >
+                      <NavLinks to={path} smooth={true} duration={300} spy={true} exact="true">
                         {label}
                       </NavLinks>
                     </NavItem>

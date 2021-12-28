@@ -4,21 +4,21 @@ export const Sponsors = [
   {
     name: 'vefi',
     logo: Vefi,
-    url: 'https://www.vefinetwork.org',
+    url: 'https://www.vefinetwork.org'
   },
   {
     name: 'Convexity',
     logo: Convexity,
-    url: '/',
+    url: '/'
   },
   {
     name: 'Tatswap',
     logo: Tatswap,
-    url: '/',
+    url: '/'
   },
   {
     name: 'haggleX',
     logo: HaggleX,
-    url: '/',
-  },
+    url: '/'
+  }
 ];

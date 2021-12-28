@@ -7,7 +7,7 @@ import {
   LegendColor,
   LegendText,
   TokenomicsContainer,
-  WrapperContainer,
+  WrapperContainer
 } from '../../../styles/tokenomics/Tokenomics.styled';
 import { Title } from '../../../utility';
 import { Column, Container, Row } from '../../../utility/GlobalStyle';
