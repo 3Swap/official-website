@@ -1,2 +1,2 @@
-export { ConnectWallet } from "./ConnectWallet";
-export { JoinAirDrop } from "./JoinAirDrop";
+export { Connectwallet } from './ConnectWallet';
+export { JoinAirDrop } from './JoinAirDrop';

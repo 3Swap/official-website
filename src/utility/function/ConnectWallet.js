@@ -1,3 +1,3 @@
-export const ConnectWallet = () => {
+export const Connectwallet = () => {
   alert('Connect Wallet');
 };

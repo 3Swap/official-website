@@ -1,7 +1,7 @@
 import React from 'react';
-import { Title } from '../../utility';
-import { SectionWrapper } from '../../styles/section/Section.styled';
-import { Container, Heading, Subheading } from '../../utility/GlobalStyle';
+import { Title } from '../../../utility';
+import { SectionWrapper } from '../../../styles/section/Section.styled';
+import { Container, Heading, Subheading } from '../../../utility/GlobalStyle';
 import {
   Icon,
   SectionTeamContainer,
@@ -9,9 +9,9 @@ import {
   TeamContainer,
   TeamMeber,
   TeamMeberInfo,
-} from '../../styles/team/Team.styled';
-import { FiLinkedin, FiTwitter, FiGithub } from '../../utility';
-import Image from '../../components/Image';
+} from '../../../styles/team/Team.styled';
+import { FiLinkedin, FiTwitter, FiGithub } from '../../../utility';
+import Image from '../../../components/Image';
 
 const Team = (props) => {
   return (

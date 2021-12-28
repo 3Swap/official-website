@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -144,5 +145,44 @@ export const Button = styled.button`
   }
 `;
 export const SectionLink = styled.a``;
+export const NavLink = styled(Link)``;
+export const Background = styled.div`
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+`;
+export const ModalWrapper = styled.div`
+  width: 100%;
+  max-width: ${(props) =>
+    props.mxWidth === 'sm'
+      ? '400px'
+      : props.mxWidth === 'md'
+      ? '800px'
+      : props.mxWidth === 'lg'
+      ? '1000px'
+      : '1200px'};
+  margin-left: auto;
+  margin-right: auto;
+  background: #0b131a;
+  color: #fff;
+  position: relative;
+  z-index: 999;
+  padding: 20px 30px;
+  border-radius: 10px;
 
+  button {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+`;
 export default GlobalStyle;

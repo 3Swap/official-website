@@ -23,3 +23,5 @@ export { default as Team_5 } from './team/team_5.png';
 export { default as Team_6 } from './team/team_6.png';
 export { default as FooterLogoBg } from './images/footer_logo.png';
 export { default as Logo } from './images/logo.png';
+export { default as SettingImg } from './icons/cog.png';
+export { default as Threeswap } from './icons/3swap.png';

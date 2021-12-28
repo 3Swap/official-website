@@ -1,15 +1,15 @@
 import React from 'react';
-import { FiDownloadCloud } from '../../utility';
-import { Coin_1, Coin_2 } from '../../assets';
-import Button from '../../components/Button';
-import Image from '../../components/Image';
-import { Sponsors } from '../../data/Sponsor.data';
+import { FiDownloadCloud } from '../../../utility';
+import { Coin_1, Coin_2 } from '../../../assets';
+import Button from '../../../components/Button';
+import Image from '../../../components/Image';
+import { Sponsors } from '../../../data/Sponsor.data';
 import {
   AboutWrapper,
   Box,
   BrandContainer,
-} from '../../styles/about/About.styled';
-import { SectionImageWrapper } from '../../styles/section/Section.styled';
+} from '../../../styles/about/About.styled';
+import { SectionImageWrapper } from '../../../styles/section/Section.styled';
 import {
   Row,
   Column,
@@ -20,7 +20,7 @@ import {
   ButtonWrapper,
   Subheading,
   SectionLink,
-} from '../../utility/GlobalStyle';
+} from '../../../utility/GlobalStyle';
 
 const About = (props) => {
   return (

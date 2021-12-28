@@ -14,6 +14,10 @@ export const NavWrapper = styled.div`
   border-radius: 10px;
   margin-bottom: 40px;
   z-index: 999;
+
+  @media screen and (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 export const Navcontent = styled.div`
@@ -22,6 +26,14 @@ export const Navcontent = styled.div`
   ${Column} {
     &:nth-child(1) {
       margin-left: 30px;
+
+      @media screen and (max-width: 768px) {
+        img {
+          position: relative;
+          margin-top: 5px;
+          left: -150px;
+        }
+      }
     }
 
     &:nth-child(2) {
@@ -30,6 +42,12 @@ export const Navcontent = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .row {
+      display: flex;
+      width: 100%;
     }
   }
 `;

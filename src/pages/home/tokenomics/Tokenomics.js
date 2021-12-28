@@ -1,16 +1,16 @@
 import React from 'react';
-import { Coin_bg_left, Coin_bg_right, TokenomicsImg } from '../../assets';
-import Image from '../../components/Image';
-import { SectionWrapper } from '../../styles/section/Section.styled';
+import { Coin_bg_left, Coin_bg_right, TokenomicsImg } from '../../../assets';
+import Image from '../../../components/Image';
+import { SectionWrapper } from '../../../styles/section/Section.styled';
 import {
   Legend,
   LegendColor,
   LegendText,
   TokenomicsContainer,
   WrapperContainer,
-} from '../../styles/tokenomics/Tokenomics.styled';
-import { Title } from '../../utility';
-import { Column, Container, Row } from '../../utility/GlobalStyle';
+} from '../../../styles/tokenomics/Tokenomics.styled';
+import { Title } from '../../../utility';
+import { Column, Container, Row } from '../../../utility/GlobalStyle';
 
 const Tokenomics = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Dart, ProductBg, ProductBg_, Vefi } from '../../assets';
-import Button from '../../components/Button';
-import Image from '../../components/Image';
-import { ProductDataTwo } from '../../data/Product.data';
-import { BrandContainer } from '../../styles/about/About.styled';
+import { Dart, ProductBg, ProductBg_, Vefi } from '../../../assets';
+import Button from '../../../components/Button';
+import Image from '../../../components/Image';
+import { ProductDataTwo } from '../../../data/Product.data';
+import { BrandContainer } from '../../../styles/about/About.styled';
 import {
   InfoSection,
   ProductConent,
@@ -15,20 +15,20 @@ import {
   ImageWrapper,
   InfoSectionWrapper,
   SupportedBy,
-} from '../../styles/products/Products.styled';
+} from '../../../styles/products/Products.styled';
 import {
   SectionPadding,
   SectionWrapper,
-} from '../../styles/section/Section.styled';
+} from '../../../styles/section/Section.styled';
 
-import { Title } from '../../utility';
+import { Title } from '../../../utility';
 import {
   Column,
   Container,
   Heading,
   Row,
   Subheading,
-} from '../../utility/GlobalStyle';
+} from '../../../utility/GlobalStyle';
 
 const Product = (props) => {
   return (

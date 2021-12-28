@@ -103,7 +103,6 @@ export const TeamMeberInfo = styled.div`
 
     @media screen and (max-width: 768px) {
       font-size: 24px;
-      margin-top: -15px;
     }
   }
   ${Subheading} {

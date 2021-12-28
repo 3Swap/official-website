@@ -2,7 +2,7 @@ import React from 'react';
 import Image from './Image';
 import { Logo } from '../assets';
 import { FaBars } from '../utility';
-import { ConnectWallet } from '../utility/function';
+
 import {
   MobileIcon,
   NavBtn,
@@ -13,7 +13,7 @@ import {
   NavWrapper,
 } from '../styles/navbar/Navbar.styled';
 import { NavLinks as Navigation } from '../data/Navlink.data';
-import { Column, Container, Row } from '../utility/GlobalStyle';
+import { Column, Container, NavLink, Row } from '../utility/GlobalStyle';
 import Button from './Button';
 
 const Navbar = ({ toggle }) => {
@@ -22,9 +22,11 @@ const Navbar = ({ toggle }) => {
       <NavWrapper>
         <Container>
           <Navcontent>
-            <Row>
+            <Row className="row">
               <Column flex="0.2">
-                <Image img={Logo} />
+                <NavLink to="/">
+                  <Image img={Logo} />
+                </NavLink>
               </Column>
               <Column flex="0.8">
                 <MobileIcon onClick={toggle}>
@@ -46,14 +48,15 @@ const Navbar = ({ toggle }) => {
                   ))}
                 </NavMenu>
                 <NavBtn>
-                  <Button
-                    bgColor="var(--bg-two)"
-                    textColor="var(--text-color)"
-                    hoverBg="var(--text-color)"
-                    hoverColor="var(--bg-one)"
-                    label="Connect Wallet"
-                    onClick={ConnectWallet}
-                  />
+                  <NavLink to="/connect">
+                    <Button
+                      bgColor="var(--bg-two)"
+                      textColor="var(--text-color)"
+                      hoverBg="var(--text-color)"
+                      hoverColor="var(--bg-one)"
+                      label="Connect Wallet"
+                    />
+                  </NavLink>
                 </NavBtn>
               </Column>
             </Row>
