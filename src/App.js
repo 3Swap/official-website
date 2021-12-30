@@ -5,7 +5,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/connect" element={<ConnectWallet />}></Route>
+        <Route path="/app" element={<ConnectWallet />}></Route>
       </Routes>
     </>
   );

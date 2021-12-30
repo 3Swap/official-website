@@ -20,9 +20,9 @@ const Section = props => {
                 <Subheading as="p" size="sm">
                   {props.description}
                 </Subheading>
-                <NavLink to="/connect">
+                <NavLink to="/app">
                   <Button
-                    label="Test Demo App"
+                    label="Demo App"
                     bgColor="var(--bg-two)"
                     textColor="var(--text-color)"
                     hoverBg="var(--text-color)"

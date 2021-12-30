@@ -21,9 +21,8 @@ import { Column, Container, Heading, Subheading } from '../../utility/GlobalStyl
 
 const ConnectWallet = () => {
   //  Moralis
-  Moralis.initialize(process.env.REACT_APP_Moralis_appId);
-  Moralis.serverURL = process.env.REACT_APP_Moralis_ServerUrl;
-
+  Moralis.initialize('KmcuuWG2cBoIOgXxKjbaXbk4K21lrjkWUjs7Zxko');
+  Moralis.serverURL = 'https://bhbsz1b9snza.usemoralis.com:2053/server';
   //  State
   const [showModal, setShowModal] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
