@@ -1,6 +1,7 @@
 // export { default as Herosection } from '../pages/herosection/HeroSection';
 export { default as Navbar } from './Navbar';
 export { default as Sidebar } from './Sidebar';
+export { default as Select } from './Select';
 export { default as Footer } from './Footer';
 export { default as Image } from './Image';
 export { default as Button } from './Button';

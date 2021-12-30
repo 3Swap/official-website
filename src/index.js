@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { MoralisProvider } from 'react-moralis';
+
 import GlobalStyle from './utility/GlobalStyle';
 import ScrollToTop from './utility/ScrollToTop';
 
