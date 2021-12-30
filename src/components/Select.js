@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, MenuItem, Slide } from '@mui/material';
+import { Fade, Menu, MenuItem } from '@mui/material';
 
 const Test = ({ tokens }) => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -24,9 +24,22 @@ const Test = ({ tokens }) => {
   for (const address in tokens) {
     let token = tokens[address];
     items.push(
-      <MenuItem key={token.symbol} onClick={() => handleSelected(token)}>
-        <img src={token.logoURI} alt="img" width="10px" height="10px" />
-        {token.symbol}
+      <MenuItem
+        key={token.symbol}
+        onClick={() => handleSelected(token)}
+        className="MenuItem"
+        style={{ padding: '10px 0px 10px 30px' }}
+      >
+        <img
+          src={token.logoURI}
+          style={{ width: '20px', height: '20px', marginRight: '10px' }}
+          alt="img"
+          width="10px"
+          height="10px"
+        />
+        <span className="MenuList" style={{ fontWeight: 'bold' }}>
+          {token.symbol}
+        </span>
       </MenuItem>
     );
   }
@@ -34,27 +47,22 @@ const Test = ({ tokens }) => {
   //   console.log(selectedToken);
   return (
     <>
-      <span onClick={openMenu}>
-        {selectedTokenImg ? <img src={selectedTokenImg} alt="img" /> : null}{' '}
-        {selectedToken ? selectedToken : 'select coin'}
-      </span>
-      {items && (
-        <Menu
-          open={open}
-          anchorEl={anchorEl}
-          onClose={handleClose}
-          TransitionComponent={Slide}
-          keepMounted
-          PaperProps={{
-            style: {
-              maxHeight: 100 * 4,
-              width: '20ch'
-            }
-          }}
-        >
-          {items}
-        </Menu>
-      )}
+      <div onClick={openMenu} className="MenuBox">
+        <span className="MenuImg"> {selectedTokenImg ? <img src={selectedTokenImg} alt="img" /> : null}</span>{' '}
+        <span className="MenuLabel">
+          {selectedToken ? selectedToken : <span className="defualt">select token</span>}
+        </span>
+      </div>
+      <Menu
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        TransitionComponent={Fade}
+        keepMounted
+        className="menux"
+      >
+        {items}
+      </Menu>
     </>
   );
 };

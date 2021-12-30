@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import Moralis from 'moralis';
 import { SettingImg } from '../../assets';
 import { Navbar, Footer, Image, Button, SelectWallet, CoinSetting, Sidebar, Select } from '../../components';
@@ -18,6 +17,7 @@ import {
   ConnectCoinInfo
 } from '../../styles/connect/Connect.styled';
 import { Column, Container, Heading, Subheading } from '../../utility/GlobalStyle';
+import { Swap } from '../../utility/function';
 
 const ConnectWallet = () => {
   //  Moralis
@@ -28,7 +28,7 @@ const ConnectWallet = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showSetting, setShowSetting] = useState(false);
   const [tokenAddress, setTokenAddress] = useState({});
-  const location = useLocation();
+  const [currentUser, setCurrentUser] = useState();
 
   //  Modals & Functions
   const openModal = () => {
@@ -45,6 +45,7 @@ const ConnectWallet = () => {
   async function init() {
     await Moralis.initPlugins();
     await Moralis.enableWeb3();
+    setCurrentUser(Moralis.User.current());
     listAvailableTokens();
   }
 
@@ -58,7 +59,7 @@ const ConnectWallet = () => {
 
   useEffect(() => {
     init();
-  }, [location]);
+  }, []);
 
   return (
     <>
@@ -170,12 +171,12 @@ const ConnectWallet = () => {
                 <Heading as="h3">0.12%</Heading>
               </ContainerHeading>
               <Button
-                label="Connect Wallet"
+                label={!currentUser ? 'Connect Wallet' : 'Swap'}
                 bgColor="var(--bg-two)"
                 textColor="var(--text-color)"
                 hoverBg="var(--text-color)"
                 hoverColor="var(--bg-one)"
-                onClick={openModal}
+                onClick={!currentUser ? openModal : Swap}
               />
             </ConnectCoinInfo>
           </ConnectWalletContainer>
