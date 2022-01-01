@@ -82,7 +82,7 @@ const Product = props => {
                   <Title as="h1" size="sm" textColor="var(--bg-one)" bold>
                     <span>Participate</span> in our ICO
                   </Title>
-                  <Subheading as="p">
+                  <Subheading as="p" className="sub">
                     3swap native token(SAP) would be giving to investors during the ICO immediately after purchasing.
                     3swap(SAP) token would be used for liquidity, governance and our upcoming NFT project.We are new and
                     catchy, invest in us now and get ready for a massive ROI.
