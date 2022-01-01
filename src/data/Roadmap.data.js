@@ -5,50 +5,39 @@ export const RoadmapData = {
   events: [
     {
       title: 'Phase 1',
+      slug: 'Q1',
       date: '08/12/2021',
       color: '#BAC82E',
-      description: [
-        'Researching, Planning, and documenting the core idea of the 3SWAP NETWORK.',
-      ],
+      description: ['3swap(SAP) Tokenomics', 'Initial Coin Offering']
     },
     {
       title: 'Phase 2',
+      slug: 'Q2',
       date: '08/12/2021',
       color: '#0B6C81',
-      description: [
-        'Assembling the 3SWAP NETWORK core team members and moving to launch of the ecosystem and commencement of product development.',
-      ],
+      description: ['3swap Decentralized Exchange Development.', '3swap NFT Deployment']
     },
     {
       title: 'Phase 3',
+      slug: 'Q3',
       date: '08/12/2021',
       color: '#F4A120',
-      description: [
-        'Completion of the 3SWAP NETWORK first whitepaper version.',
-        'Completion of the first version of the website.',
-      ],
+      description: ['3swap Governance', '3swap Farming']
     },
     {
       title: 'Phase 4',
+      slug: 'Q4',
       date: '08/12/2021',
       color: '#C8532E',
-      description: [
-        'ICO stages for retail investors.',
-        'Contracting institutional investors.',
-        'initial Liquidity Offering.',
-        'further product development',
-        'Updated website and whitepaper.',
-      ],
+      description: ['3swap Metaverse']
     },
     {
       title: 'Phase 5',
+      slug: 'Q5',
       date: '08/12/2021',
       color: '#ABCB9C',
-      description: [
-        'Completion of 3SWAP Exchange and wallet MVP.',
-        'Launching of 3SWAP Blockchain(VSC) whitepaper. 3SWAP Blockchain (VSC) is the final stage of development.',
-      ],
-    },
+      description: ['Further Development']
+    }
     //   {
     //     title: "Phase 6",
     //     description: ["Launching of VEFI Exchange and wallet on Play store and Apple store."]
@@ -61,5 +50,5 @@ export const RoadmapData = {
     //     title: "Phase 8",
     //     description: ["VEFI Blockchain (VEFI Smart Contract-VSC) Release of incentivized Testnet."]
     //   }
-  ],
+  ]
 };

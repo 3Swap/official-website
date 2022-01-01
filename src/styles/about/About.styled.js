@@ -71,7 +71,7 @@ export const AboutWrapper = styled.div`
   }
   ${Subheading} {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 28px;
     color: var(--bg-one);
     margin-bottom: 5px;
     padding-left: 8px;

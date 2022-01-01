@@ -24,7 +24,8 @@ const Footer = props => {
                 <Image img={FooterLogoBg} alt="footer logo" />
               </FooterLogo>
               <Subheading as="p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error dolores optio delectus.
+                3swap is a decentralized exchange that enables users to swap between three cryptocurrency assets by
+                tapping into user-defined liquidity pools.
               </Subheading>
               <FooterSocialIcon>
                 {props.socialLink.map((link, i) => (

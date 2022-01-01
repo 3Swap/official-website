@@ -17,8 +17,14 @@ export const SectionPadding = styled.div`
   padding-left: 50px;
 
   ${Title} {
-    font-size: 70px;
-    line-height: 105px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  ${Subheading} {
+    font-size: 20px;
+    line-height: 32px;
   }
 
   @media screen and (max-width: 768px) {
@@ -29,6 +35,7 @@ export const SectionPadding = styled.div`
     ${Subheading} {
       font-size: 18px;
       line-height: 28px;
+      opacity: 0.5;
     }
   }
 `;

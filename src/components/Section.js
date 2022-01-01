@@ -13,7 +13,7 @@ const Section = props => {
         <Container>
           <Row>
             <Column flex="0.5">
-              <SectionPadding>
+              <SectionPadding className="about">
                 <Title as="h1" size="bg" bold>
                   {props.title}
                 </Title>

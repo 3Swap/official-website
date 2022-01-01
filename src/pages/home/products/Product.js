@@ -1,9 +1,9 @@
 import React from 'react';
-import { Dart, ProductBg, ProductBg_, Vefi } from '../../../assets';
+import { Dart, ProductBg, ProductBg_ } from '../../../assets';
 import Button from '../../../components/Button';
 import Image from '../../../components/Image';
 import { ProductDataTwo } from '../../../data/Product.data';
-import { BrandContainer } from '../../../styles/about/About.styled';
+// import { BrandContainer } from '../../../styles/about/About.styled';
 import {
   InfoSection,
   ProductConent,
@@ -13,8 +13,8 @@ import {
   ProductLogo,
   ProductSectionWrapper,
   ImageWrapper,
-  InfoSectionWrapper,
-  SupportedBy
+  InfoSectionWrapper
+  // SupportedBy
 } from '../../../styles/products/Products.styled';
 import { SectionPadding, SectionWrapper } from '../../../styles/section/Section.styled';
 
@@ -60,7 +60,7 @@ const Product = props => {
             <Heading>{ProductDataTwo.subheading}</Heading>
             <Subheading>{ProductDataTwo.description}</Subheading>
             <Button
-              label="Trade Now"
+              label="Try Demo"
               bgColor="var(--bg-two)"
               textColor="var(--text-color)"
               hoverBg="var(--text-color)"
@@ -83,9 +83,9 @@ const Product = props => {
                     <span>Participate</span> in our ICO
                   </Title>
                   <Subheading as="p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices netus sit quis sapien.Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit. Ultrices netus sit quis sapien.Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit. Ultrices netus sit quis sapien.
+                    3swap native token(SAP) would be giving to investors during the ICO immediately after purchasing.
+                    3swap(SAP) token would be used for liquidity, governance and our upcoming NFT project.We are new and
+                    catchy, invest in us now and get ready for a massive ROI.
                   </Subheading>
                   <Button
                     label="Buy Now"
@@ -103,7 +103,7 @@ const Product = props => {
           </Container>
         </InfoSectionWrapper>
       </SectionWrapper>
-      <SectionWrapper bg="var(--bg-one)">
+      {/* <SectionWrapper bg="var(--bg-one)">
         <Container mxWidth="md">
           <SupportedBy>
             <Heading>Supported Wallet</Heading>
@@ -117,7 +117,7 @@ const Product = props => {
             </BrandContainer>
           </SupportedBy>
         </Container>
-      </SectionWrapper>
+      </SectionWrapper> */}
     </>
   );
 };

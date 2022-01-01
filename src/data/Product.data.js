@@ -1,34 +1,34 @@
 import { TimeBg } from '../assets';
 import { BsTv } from '../utility';
 export const ProductData = {
-  heading: 'Products',
-  subheading: 'Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.',
+  heading: 'Our Solutions',
+  subheading: ' we are making the future of token swap Interesting, enjoy more value, speed and flexibility.',
   productInfo: [
     {
-      title: 'Heading One',
+      title: 'Flexibility',
       icon: BsTv,
       description:
-        'Lorem ipsum dolor sit amet consectetur ipisicing elit. Vitae libero nobis officia temporibus quam rem dolorem ratione quibusdam, deleniti tempora est recusandae quasi neque et odit cum fugiat vero impedit.'
+        'Flexibility Pioneer dexes like uniswap and pancake swap allow swaps of two tokens on the same chain. '
     },
     {
-      title: 'Heading Two',
+      title: 'Speed',
       icon: BsTv,
       description:
-        'Lorem ipsum dolor sit amet consectetur ipisicing elit. Vitae libero nobis officia temporibus quam rem dolorem ratione quibusdam, deleniti tempora est recusandae quasi neque et odit cum fugiat vero impedit.'
+        '3swap is built to swap all three tokens in one click at a faster speed it would take the native dexes to swap two. '
     },
     {
-      title: 'Heading Three',
+      title: 'Liquidity Provision',
       icon: BsTv,
       description:
-        'Lorem ipsum dolor sit amet consectetur ipisicing elit. Vitae libero nobis officia temporibus quam rem dolorem ratione quibusdam, deleniti tempora est recusandae quasi neque et odit cum fugiat vero impedit.'
+        '3swap aims to give more by allowing liquidity providers the option to add an extra token or coin into the liquidity pool. More tokens or coins in the pool, more rewards.'
     }
   ]
 };
 
 export const ProductDataTwo = {
-  title: 'Trade Anything',
+  title: 'Token Swap',
   subheading: 'No registration, No hassle.',
   img: TimeBg,
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis molestie donec nunc vitae id metus purus, sit risus. Pellentesque id blandit tellus felis nulla auctor nibh. Imperdiet ultrices ullamcorper enim nibh at. Risus ac iaculis orci sit molestie interdum posuere enim sit.'
+    '3swap decentralized exchange wont only be a decentralized exchange fortrading tokens but also for valuable asset such as NFTs. We would be providing a large number of tools for creaঞng, mining and selling orders of NFTs on our marketplace. This would facilitate development ofthirdparty mrketplace, using 3swap NFTs marketplace to buy and transfer NFTs to other Blockchain and marketplace.'
 };
