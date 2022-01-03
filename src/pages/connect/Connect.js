@@ -28,6 +28,7 @@ const ConnectWallet = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showSetting, setShowSetting] = useState(false);
   const [tokenAddress, setTokenAddress] = useState({});
+  const [loading, setLoading] = useState(true);
   const [currentUser, setCurrentUser] = useState();
 
   //  Modals & Functions
@@ -47,6 +48,7 @@ const ConnectWallet = () => {
     await Moralis.enableWeb3();
     setCurrentUser(Moralis.User.current());
     listAvailableTokens();
+    setLoading(true);
   }
 
   // Get List of all available Tokens
@@ -55,6 +57,7 @@ const ConnectWallet = () => {
       chain: 'eth' // The blockchain you want to use (eth/bsc/polygon)
     });
     setTokenAddress(result.tokens);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -88,7 +91,7 @@ const ConnectWallet = () => {
               <CoinContainer>
                 <Column flex="0.6">
                   <SelectCoinContainer>
-                    <Select tokens={tokenAddress} />
+                    <Select tokens={tokenAddress} loading={loading} />
                     <span>
                       <FiChevronDown className="icon" />
                     </span>
@@ -110,7 +113,7 @@ const ConnectWallet = () => {
               <CoinContainer>
                 <Column flex="0.6">
                   <SelectCoinContainer>
-                    <Select tokens={tokenAddress} />
+                    <Select tokens={tokenAddress} loading={loading} />
                     <span>
                       <FiChevronDown className="icon" />
                     </span>
@@ -139,7 +142,7 @@ const ConnectWallet = () => {
               <CoinContainer>
                 <Column flex="0.6">
                   <SelectCoinContainer>
-                    <Select tokens={tokenAddress} />
+                    <Select tokens={tokenAddress} loading={loading} />
                     <span>
                       <FiChevronDown className="icon" />
                     </span>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Fade, Menu, MenuItem } from '@mui/material';
 
-const Test = ({ tokens }) => {
+const Test = ({ tokens, loading }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedToken, setSelectedToken] = useState();
   const [selectedTokenImg, setSelectedTokenImg] = useState();
@@ -21,6 +21,7 @@ const Test = ({ tokens }) => {
     setSelectedTokenImg(token.logoURI);
   };
   const items = [];
+
   for (const address in tokens) {
     let token = tokens[address];
     items.push(
@@ -43,14 +44,19 @@ const Test = ({ tokens }) => {
       </MenuItem>
     );
   }
-
   //   console.log(selectedToken);
   return (
     <>
       <div onClick={openMenu} className="MenuBox">
         <span className="MenuImg"> {selectedTokenImg ? <img src={selectedTokenImg} alt="img" /> : null}</span>{' '}
         <span className="MenuLabel">
-          {selectedToken ? selectedToken : <span className="defualt">select token</span>}
+          {selectedToken ? (
+            selectedToken
+          ) : loading ? (
+            <span className="defualt">loading...</span>
+          ) : (
+            <span className="defualt">select token</span>
+          )}
         </span>
       </div>
       <Menu

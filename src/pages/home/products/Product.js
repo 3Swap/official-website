@@ -1,8 +1,9 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { Dart, ProductBg, ProductBg_ } from '../../../assets';
-import Button from '../../../components/Button';
-import Image from '../../../components/Image';
+import { Button, Image } from '../../../components';
 import { ProductDataTwo } from '../../../data/Product.data';
+import { openModal } from '../../../redux/toggleSlice';
 // import { BrandContainer } from '../../../styles/about/About.styled';
 import {
   InfoSection,
@@ -22,6 +23,11 @@ import { Title } from '../../../utility';
 import { Column, Container, Heading, Row, Subheading } from '../../../utility/GlobalStyle';
 
 const Product = props => {
+  const dispatch = useDispatch();
+  const handleOpenModal = () => {
+    dispatch(openModal());
+  };
+
   return (
     <>
       <ProductSectionWrapper id="feature">
@@ -93,6 +99,7 @@ const Product = props => {
                     textColor="var(--text-color)"
                     hoverBg="var(--text-color)"
                     hoverColor="var(--bg-one)"
+                    onClick={handleOpenModal}
                   />
                 </SectionPadding>
               </Column>

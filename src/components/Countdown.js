@@ -1,4 +1,6 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { openModal } from '../redux/toggleSlice';
 import {
   CountdownContainerWrapper,
   CountdownContainer,
@@ -10,6 +12,10 @@ import { Heading } from '../utility/GlobalStyle';
 import Button from './Button';
 
 const Countdown = () => {
+  const dispatch = useDispatch();
+  const handleOpenModal = () => {
+    dispatch(openModal());
+  };
   return (
     <>
       <CountdownContainerWrapper>
@@ -42,6 +48,7 @@ const Countdown = () => {
           textColor="var(--text-color)"
           hoverBg="var(--text-color)"
           hoverColor="var(--bg-one)"
+          onClick={handleOpenModal}
         />
       </CountdownContainerWrapper>
     </>

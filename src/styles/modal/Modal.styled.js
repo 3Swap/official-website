@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Heading, Subheading } from '../../utility/GlobalStyle';
+import { Column, Heading, Subheading } from '../../utility/GlobalStyle';
 
 export const ModalHeader = styled.div`
   display: flex;
@@ -97,5 +97,30 @@ export const ModalAdjustContainer = styled.div`
     width: 80%;
     display: flex;
     margin: 0px auto;
+  }
+`;
+
+export const ModalContentHeading = styled.div`
+  text-align: left;
+  margin-bottom: 10px;
+
+  ${Heading} {
+    font-size: 12px;
+  }
+`;
+
+export const ModalPriceDetails = styled.div`
+  margin-top: 20px;
+  ${Column} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ccc;
+    ${Heading} {
+      font-size: 12px;
+    }
+    ${Heading}:last-child {
+      font-size: 20px;
+    }
   }
 `;

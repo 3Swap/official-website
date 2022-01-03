@@ -7,5 +7,7 @@ export { default as Image } from './Image';
 export { default as Button } from './Button';
 export { default as Section } from './Section';
 export { default as Roadmap } from './Roadmap';
+export { default as Input } from './InputField';
 export { default as SelectWallet } from './modal/SelectWallet';
+export { default as BuyNow } from './modal/BuyNow';
 export { default as CoinSetting } from './modal/Setting';
