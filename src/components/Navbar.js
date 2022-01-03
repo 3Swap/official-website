@@ -35,13 +35,13 @@ const Navbar = ({ toggle }) => {
                   ))}
                 </NavMenu>
                 <NavBtn>
-                  <NavLink to="/connect">
+                  <NavLink to="/app">
                     <Button
                       bgColor="var(--bg-two)"
                       textColor="var(--text-color)"
                       hoverBg="var(--text-color)"
                       hoverColor="var(--bg-one)"
-                      label="Connect Wallet"
+                      label="Demo App"
                     />
                   </NavLink>
                 </NavBtn>

@@ -8,12 +8,12 @@ import {
   RoadmapStageContent,
   RoadmapContent,
   RoadmapContentHeading,
-  RoadmapMilstone,
+  RoadmapMilstone
 } from '../styles/roadmap/Roadmap.styled';
 import { SectionWrapper } from '../styles/section/Section.styled';
-import { Container, Heading, Subheading, Title } from '../utility/GlobalStyle';
+import { Container, Heading, Title } from '../utility/GlobalStyle';
 
-const Roadmap = (props) => {
+const Roadmap = props => {
   return (
     <>
       <RoadmapWrapper id={props.id}>
@@ -28,7 +28,7 @@ const Roadmap = (props) => {
                   <RoadmapStage bg={event.color}>
                     <RoadmapStageContent>
                       <span>
-                        <Heading bold>Q1</Heading>
+                        <Heading bold>{event.slug}</Heading>
                       </span>
                     </RoadmapStageContent>
                   </RoadmapStage>
@@ -37,7 +37,7 @@ const Roadmap = (props) => {
                       <Heading bold textColor={event.color}>
                         {event.title}
                       </Heading>
-                      <Subheading>{event.date}</Subheading>
+                      {/* <Subheading>{event.date}</Subheading> */}
                     </RoadmapContentHeading>
                     <RoadmapMilstone>
                       <ul>

@@ -1,28 +1,31 @@
 import React from 'react';
-import Image from './Image';
+import { useSelector } from 'react-redux';
 import { SectionImageWrapper, SectionWrapper, SectionPadding } from '../styles/section/Section.styled';
 import { Title } from '../utility';
 import { Row, Column, Container, Subheading, NavLink } from '../utility/GlobalStyle';
 import Button from './Button';
 import Countdown from './Countdown';
+import { BuyNow, Image } from './index';
 
 const Section = props => {
+  const { showModal } = useSelector(state => state.modal);
   return (
     <>
+      <BuyNow open={showModal} />
       <SectionWrapper id="home">
         <Container>
           <Row>
             <Column flex="0.5">
-              <SectionPadding>
+              <SectionPadding className="about">
                 <Title as="h1" size="bg" bold>
                   {props.title}
                 </Title>
                 <Subheading as="p" size="sm">
                   {props.description}
                 </Subheading>
-                <NavLink to="/connect">
+                <NavLink to="/">
                   <Button
-                    label="Test Demo App"
+                    label="Demo App"
                     bgColor="var(--bg-two)"
                     textColor="var(--text-color)"
                     hoverBg="var(--text-color)"

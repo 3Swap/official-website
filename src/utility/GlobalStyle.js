@@ -144,6 +144,7 @@ export const Background = styled.div`
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
+  top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;

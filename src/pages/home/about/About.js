@@ -26,7 +26,7 @@ const About = props => {
           <Container>
             <Row>
               <Column>
-                <Heading bold uppercase>
+                <Heading bold uppercase textColor="#000">
                   {props.topheading}
                 </Heading>
                 <Title as="h1" bold uppercase textColor="#B50050">

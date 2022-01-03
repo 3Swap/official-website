@@ -1,17 +1,19 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import GlobalStyle from './utility/GlobalStyle';
 import ScrollToTop from './utility/ScrollToTop';
+import store from './redux/store';
 
 ReactDOM.render(
-  <Suspense fallback="<h1>Loading...</h1>">
+  <Provider store={store}>
     <Router>
       <GlobalStyle />
       <ScrollToTop />
       <App />
     </Router>
-  </Suspense>,
+  </Provider>,
   document.getElementById('root')
 );

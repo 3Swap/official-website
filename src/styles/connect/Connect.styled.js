@@ -126,6 +126,39 @@ export const SelectCoinContainer = styled.div`
   ${Heading} {
     font-size: 12px;
   }
+  .MenuItem {
+    img {
+      display: none;
+    }
+  }
+  .MenuBox {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding: 2px;
+    .MenuLabel {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: 'Lora';
+      font-weight: 600;
+      .defualt {
+        text-transform: capitalize;
+        font-size: 11px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 10px;
+        }
+      }
+    }
+    .MenuImg {
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        border-radius: 50%;
+      }
+    }
+  }
 `;
 export const CoinLogo = styled.div`
   margin-left: 5px;
@@ -135,6 +168,7 @@ export const CoinLogo = styled.div`
     width: 100%;
     height: 20px;
     object-fit: contain;
+    margin-right: 3px;
   }
 `;
 export const CoinName = styled.div``;

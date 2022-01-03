@@ -5,5 +5,5 @@ export const Aboutus = {
   imgBg: Star,
   img: LogoBg,
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi hac egestas quis tincidunt. Eu id sed ante tortor mauris, at at et. Netus tristique in ornare arcu amet cras iaculis amet. Condimentum massa in tincidunt cum lacus. Dolor sed amet lacus at aliquam. Elit duis et leo tellus quis ut. Quisque tempus amet sit enim nibh rutrum massa eu purus. Dui, eget lacus leo eu urna volutpat. Aliquam pellentesque purus leo, erat duis integer euismod. Quis at duis morbi ac. Lobortis nulla ultrices vel in. '
+    'swap is a dex built on Binance smart chain that allows you to swap not one but two tokens for another across multiple chains with little or no fees. Asides from the flexibility and speed of swapping two tokens for one, 3Swap allows liquidity providers to earn more by giving an option to provide liquidity across three tokens. 3Swap is DeFi 1.0 renovated at the cost of nothing.'
 };
