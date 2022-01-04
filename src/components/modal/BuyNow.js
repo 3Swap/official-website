@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { FiX } from '../../utility';
 import {
@@ -17,6 +17,11 @@ const BuyNow = () => {
   const { userInfo } = useSelector(state => state.user);
   const dispatch = useDispatch();
   const [amount, setAmount] = useState('');
+  const [usdValue, setUsdValue] = useState(0);
+
+  useEffect(() => {
+    setUsdValue(0);
+  }, []);
 
   const handleCloseModal = () => {
     dispatch(closeModal());
@@ -58,8 +63,8 @@ const BuyNow = () => {
             </ModalContent>
             <ModalPriceDetails>
               <Column>
-                <Heading>Transaction Amount (USD):</Heading>
-                <Heading>0.0</Heading>
+                <Heading>Amount (BNB):</Heading>
+                <Heading>{usdValue}</Heading>
               </Column>
               <Column>
                 <Heading>Amount to receive:</Heading>

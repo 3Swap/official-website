@@ -40,6 +40,7 @@ export const TeamMeber = styled.div`
     width: 100%;
     height: 300px;
     object-fit: contain;
+    border-radius: 25px;
   }
   .team {
     display: flex;
@@ -95,8 +96,8 @@ export const TeamMeberInfo = styled.div`
   justify-content: center;
   text-align: center;
   width: 100%;
-  font-weight: bold;
-  color: #ddd;
+  font-weight: 1000;
+  color: #00008b;
   ${Heading} {
     font-size: 12px;
     font-weight: 600;
