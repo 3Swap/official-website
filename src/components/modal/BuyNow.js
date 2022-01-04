@@ -46,7 +46,7 @@ const BuyNow = () => {
             </ModalHeader>
             <ModalContent>
               <ModalContentHeading>
-                <Heading>Enter Amount (USD)</Heading>
+                <Heading>Enter Amount (BNB)</Heading>
               </ModalContentHeading>
               <Input
                 type="number"
@@ -58,7 +58,7 @@ const BuyNow = () => {
             </ModalContent>
             <ModalPriceDetails>
               <Column>
-                <Heading>Transaction Amount (USD):</Heading>
+                <Heading>Transaction Amount (BNB):</Heading>
                 <Heading>0.0</Heading>
               </Column>
               <Column>

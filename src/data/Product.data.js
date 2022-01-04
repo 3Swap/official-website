@@ -2,7 +2,7 @@ import { TimeBg } from '../assets';
 import { BsTv } from '../utility';
 export const ProductData = {
   heading: 'Our Solutions',
-  subheading: ' we are making the future of token swap Interesting, enjoy more value, speed and flexibility.',
+  subheading: 'we are making the future of token swap Interesting, earn more, enjoy more speed and flexibility.',
   productInfo: [
     {
       title: 'Flexibility',
@@ -30,5 +30,5 @@ export const ProductDataTwo = {
   subheading: 'No registration, No hassle.',
   img: TimeBg,
   description:
-    '3swap decentralized exchange wont only be a decentralized exchange fortrading tokens but also for valuable asset such as NFTs. We would be providing a large number of tools for creaঞng, mining and selling orders of NFTs on our marketplace. This would facilitate development ofthirdparty mrketplace, using 3swap NFTs marketplace to buy and transfer NFTs to other Blockchain and marketplace.'
+    '3swap decentralized exchange wont only be a decentralized exchange fortrading tokens but also for valuable asset such as NFTs. We would be providing a large number of tools for creating, mining and selling orders of NFTs on our marketplace. This would facilitate development of third party marketplace, using 3swap NFTs marketplace to buy and transfer NFTs to other Blockchain and marketplace.'
 };

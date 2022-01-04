@@ -1,3 +1,4 @@
+import { Menu, MenuItem } from '@mui/material';
 import styled from 'styled-components';
 import { Column, Heading, Subheading } from '../../utility/GlobalStyle';
 
@@ -122,5 +123,49 @@ export const ModalPriceDetails = styled.div`
     ${Heading}:last-child {
       font-size: 20px;
     }
+  }
+`;
+
+export const StyledMenu = styled(Menu)`
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+
+  .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    background: var(--bg-one) !important;
+    width: 300px;
+    margin: 0px auto;
+    position: relative;
+    top: 10px !important;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      position: absolute;
+    }
+  }
+  ${Heading} {
+    color: var(--text-color);
+    padding: 20px 0px 10px 20px;
+  }
+`;
+export const MenuContainer = styled.div`
+  margin: 0px auto;
+`;
+
+export const StyledMenuItem = styled(MenuItem)`
+  display: flex !important;
+  text-align: left !important;
+  justify-content: space-between;
+  color: var(--text-color) !important;
+  margin: 10px 10px !important;
+  transition: all 300ms ease-out;
+  ${MenuContainer} {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    transition: all 300ms ease-out;
+    color: var(--bg-two) !important;
   }
 `;
