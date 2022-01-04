@@ -42,31 +42,33 @@ const BuyNow = () => {
           confirmButtonText: 'OK'
         });
       } else {
-        const data = contract.methods.buyAndVest().encodeABI();
-        const tx = {
-          from: web3.account ? web3.account : '',
-          value: web3.library.utils.toWei((parseFloat(amount || '0') / usdValue).toFixed(4)),
-          data
-        };
-        const _signed = await web3.library.eth.accounts.signTransaction(tx);
-        const _sent = await web3.library.eth.sendSignedTransaction(_signed.rawTransaction);
+        const _sent = await contract.methods.buyAndVest().send({
+          from: web3.account,
+          value: web3.library.utils.toWei((parseFloat(amount || '0') / usdValue).toFixed(4))
+        });
+        // const tx = {
+        //   from: web3.account ? web3.account : '',
+        //   value: web3.library.utils.toWei((parseFloat(amount || '0') / usdValue).toFixed(4)),
+        //   data
+        // };
+        // const _signed = await web3.library.eth.accounts.signTransaction(tx);
+        // const _sent = await web3.library.eth.sendSignedTransaction(_signed.rawTransaction);
+        // alert(`Transaction executed. Hash: ${_sent.transactionHash}`);
         Swal.fire({
           title: 'Transaction Successfull',
           text: `Transaction executed. Hash: ${_sent.transactionHash}`,
           icon: 'success',
           confirmButtonText: 'OK'
         });
-        // alert(`Transaction executed. Hash: ${_sent.transactionHash}`);
       }
     } catch (error) {
-      // console.log(error);
+      // alert(error.message);
       Swal.fire({
         title: 'Error!',
         text: error.message,
         icon: 'error',
         confirmButtonText: 'OK'
       });
-      // alert(error.message);
     }
   };
 
