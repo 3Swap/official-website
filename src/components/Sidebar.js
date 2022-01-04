@@ -24,10 +24,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 
   const injectWeb3 = async () => {
     if (!web3.active || web3provider === 'NETWORK') {
-      const _isAuthorized = await injectedConnector.isAuthorized();
-      if (_isAuthorized) {
-        await web3.activate(injectedConnector);
-      }
+      await web3.activate(injectedConnector);
       dispatch(injectedProvider());
     } else {
       web3.deactivate();
