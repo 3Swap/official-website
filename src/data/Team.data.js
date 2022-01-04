@@ -6,8 +6,8 @@ export const TeamData = {
       position: 'Founder/CEO',
       pics: Team_1,
       socialLink: {
-        twitter: 'https://www.twitter.com/',
-        linkedln: 'https://www.linkedin.com/'
+        twitter: '',
+        linkedln: ''
       }
     },
     {
@@ -25,9 +25,9 @@ export const TeamData = {
       position: 'Chief Marketing Officer',
       pics: Team_3,
       socialLink: {
-        twitter: 'https://www.twitter.com/',
-        linkedln: 'https://www.linkedin.com/',
-        github: 'https://github.com/'
+        twitter: '',
+        linkedln: '',
+        github: ''
       }
     },
     {
