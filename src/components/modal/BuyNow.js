@@ -94,9 +94,11 @@ const BuyNow = () => {
               <Input
                 type="number"
                 placeholder="Enter Amount"
+                min="0"
                 onChange={e => setAmount(e.target.value.slice(0, 10))}
                 value={amount}
                 name="amount"
+                autoComplete="off"
               />
             </ModalContent>
             <ModalPriceDetails>
