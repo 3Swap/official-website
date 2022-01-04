@@ -49,6 +49,7 @@ const BuyNow = () => {
         alert(`Transaction executed. Hash: ${_sent.transactionHash}`);
       }
     } catch (error) {
+      console.log(error);
       alert(error.message);
     }
   };
