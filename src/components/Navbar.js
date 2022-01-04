@@ -37,14 +37,12 @@ const Navbar = ({ toggle }) => {
   }, [web3.active, web3provider]);
 
   useEffect(() => {
-    if (web3.active) {
-      web3.connector.on('Web3ReactUpdate', update => {
-        if (web3provider === 'INJECTED') {
-          setAccount(update.account);
-        }
+    if (window.ethereum) {
+      window.ethereum.on('accountsChanged', accounts => {
+        setAccount(accounts[0]);
       });
     }
-  }, [web3.active]);
+  }, []);
 
   return (
     <>
