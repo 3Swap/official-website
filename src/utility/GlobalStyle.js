@@ -4,7 +4,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 :root{
     --bg-one:#060e14;
-    --bg-two:#b50050;
+    --bg-two:#6e00ff;
     --bg-three:#0b131a;
     --bg-four:#162028;
     --subheading-color:#060e14;
