@@ -55,7 +55,7 @@ const BuyNow = () => {
         // const _sent = await web3.library.eth.sendSignedTransaction(_signed.rawTransaction);
         // alert(`Transaction executed. Hash: ${_sent.transactionHash}`);
         Swal.fire({
-          title: 'Transaction Successfull',
+          title: 'Transaction Successful',
           text: `Transaction executed. Hash: ${_sent.transactionHash}`,
           icon: 'success',
           confirmButtonText: 'OK'
