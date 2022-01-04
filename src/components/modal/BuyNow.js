@@ -14,6 +14,7 @@ import { closeModal } from '../../redux/toggleSlice';
 import { useWeb3React } from '@web3-react/core';
 import abi from '../../assets/contracts/SeedSaleABI.json';
 import { SEED_SALE } from '../../assets/contracts/addresses';
+import Swal from 'sweetalert2';
 
 const BuyNow = () => {
   const { showModal } = useSelector(state => state.modal);
@@ -33,7 +34,13 @@ const BuyNow = () => {
   const initiateBuy = async () => {
     try {
       if (web3provider !== 'INJECTED') {
-        throw new Error('No injected provider, connect Metamask or wallet provider');
+        // throw new Error('No injected provider, connect Metamask or wallet provider');
+        Swal.fire({
+          title: 'Connect a Wallet',
+          text: `No injected provider, connect Metamask or wallet provider`,
+          icon: 'error',
+          confirmButtonText: 'OK'
+        });
       } else {
         const data = contract.methods.buyAndVest().encodeABI();
         const tx = {
@@ -43,11 +50,23 @@ const BuyNow = () => {
         };
         const _signed = await web3.library.eth.accounts.signTransaction(tx);
         const _sent = await web3.library.eth.sendSignedTransaction(_signed.rawTransaction);
-        alert(`Transaction executed. Hash: ${_sent.transactionHash}`);
+        Swal.fire({
+          title: 'Transaction Successfull',
+          text: `Transaction executed. Hash: ${_sent.transactionHash}`,
+          icon: 'success',
+          confirmButtonText: 'OK'
+        });
+        // alert(`Transaction executed. Hash: ${_sent.transactionHash}`);
       }
     } catch (error) {
-      console.log(error);
-      alert(error.message);
+      // console.log(error);
+      Swal.fire({
+        title: 'Error!',
+        text: error.message,
+        icon: 'error',
+        confirmButtonText: 'OK'
+      });
+      // alert(error.message);
     }
   };
 
