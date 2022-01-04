@@ -4,7 +4,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 :root{
     --bg-one:#060e14;
-    --bg-two:#b50050;
+    --bg-two:#6e00ff;
     --bg-three:#0b131a;
     --bg-four:#162028;
     --subheading-color:#060e14;
@@ -148,7 +148,7 @@ export const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 10;
 `;
 export const ModalWrapper = styled.div`
   width: 100%;
@@ -159,7 +159,7 @@ export const ModalWrapper = styled.div`
   background: #0b131a;
   color: #fff;
   position: relative;
-  z-index: 999;
+  z-index: 3;
   padding: 20px 30px;
   border-radius: 10px;
 

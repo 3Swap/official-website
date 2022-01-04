@@ -11,6 +11,9 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/network-connector": "^6.1.9",
     "express": "^4.17.2",
     "framer-motion": "^5.5.5",
     "npm": "^8.3.0",
@@ -19,12 +22,14 @@
     "react-icons": "^4.3.1",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "^5.0.0",
+    "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.4",
     "redux": "^4.1.2",
     "styled-components": "^5.3.3",
     "styled-system": "^5.1.5",
-    "web-vitals": "^2.1.2"
+    "sweetalert2": "^11.3.3",
+    "web-vitals": "^2.1.2",
+    "web3": "^1.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -55,6 +60,7 @@
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/eslint-parser": "^7.16.5",
+    "@types/web3": "^1.2.2",
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.28.0",
     "path-browserify": "^1.0.1"

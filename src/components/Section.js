@@ -2,8 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { SectionImageWrapper, SectionWrapper, SectionPadding } from '../styles/section/Section.styled';
 import { Title } from '../utility';
-import { Row, Column, Container, Subheading, NavLink } from '../utility/GlobalStyle';
-import Button from './Button';
+import { Row, Column, Container, Subheading } from '../utility/GlobalStyle';
+// import Button from './Button';
 import Countdown from './Countdown';
 import { BuyNow, Image } from './index';
 
@@ -23,7 +23,7 @@ const Section = props => {
                 <Subheading as="p" size="sm">
                   {props.description}
                 </Subheading>
-                <NavLink to="/">
+                {/* <NavLink to="/">
                   <Button
                     label="Demo App"
                     bgColor="var(--bg-two)"
@@ -31,7 +31,7 @@ const Section = props => {
                     hoverBg="var(--text-color)"
                     hoverColor="var(--bg-one)"
                   />
-                </NavLink>
+                </NavLink> */}
               </SectionPadding>
             </Column>
             <Column flex="0.5">

@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { FiX } from '../../utility';
 import {
   ModalHeader,
@@ -9,25 +10,26 @@ import {
   AdjustWrapper
 } from '../../styles/modal/Modal.styled';
 import { Background, ModalWrapper, Heading, Subheading } from '../../utility/GlobalStyle';
+import { closeModal } from '../../redux/toggleSlice';
 
-const CoinSetting = ({ showSetting, setShowSetting }) => {
-  const modalRef = useRef();
+const CoinSetting = () => {
+  const { showModal } = useSelector(state => state.modal);
+  const dispatch = useDispatch();
 
-  const closeModal = e => {
-    if (modalRef.current === e.target) {
-      setShowSetting(false);
-    }
+  const handleCloseModal = () => {
+    dispatch(closeModal());
   };
+
   return (
     <>
-      {showSetting && (
+      {showModal && (
         // console.log('yes')
-        <Background ref={modalRef} onClick={closeModal}>
-          <ModalWrapper showSetting={showSetting} mxWidth="sm">
+        <Background onClick={handleCloseModal}>
+          <ModalWrapper showSetting={showModal} mxWidth="sm">
             <ModalHeader>
               <Heading>&nbsp;</Heading>
               <ModalClose>
-                <FiX className="icon" onClick={() => setShowSetting(prev => !prev)} />
+                <FiX className="icon" onClick={handleCloseModal} />
               </ModalClose>
             </ModalHeader>
             <ModalContent>
