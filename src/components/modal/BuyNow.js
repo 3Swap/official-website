@@ -93,7 +93,7 @@ const BuyNow = () => {
             </ModalHeader>
             <ModalContent>
               <ModalContentHeading>
-                <Heading>Enter Amount (BNB)</Heading>
+                <Heading>Enter Amount (USD)</Heading>
               </ModalContentHeading>
               <Input
                 type="number"
