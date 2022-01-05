@@ -52,7 +52,6 @@ const Footer = props => {
                     Help
                   </Heading>
                   <Link>Customer Support</Link>
-                  <Link>Troubleshooting</Link>
                   <Link>Guides</Link>
                 </FooterLink>
                 <FooterLink>

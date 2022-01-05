@@ -9,16 +9,16 @@ export const Sponsors = [
   {
     name: 'Convexity',
     logo: Convexity,
-    url: '/'
+    url: 'https://withconvexity.com'
   },
   {
     name: 'Tatswap',
     logo: Tatswap,
-    url: '/'
+    url: 'https://tatswap.com/'
   },
   {
     name: 'haggleX',
     logo: HaggleX,
-    url: '/'
+    url: 'https://hagglex.com'
   }
 ];

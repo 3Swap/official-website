@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useWeb3React } from '@web3-react/core';
 import { openModal } from '../redux/toggleSlice';
 import {
@@ -17,13 +17,12 @@ import { networkConnector } from '../web3/connectors';
 
 const Countdown = () => {
   const dispatch = useDispatch();
-  const web3 = useWeb3React();
+  const web3 = useWeb3React('networkConnector');
   const [contract, setContract] = useState(null);
   const [daysLeft, setDaysLeft] = useState('0');
   const [hoursLeft, setHoursLeft] = useState('0');
   const [minutesLeft, setMinutesLeft] = useState('0');
   const [secondsLeft, setSecondsLeft] = useState('0');
-  const { web3provider } = useSelector(state => state.provider);
 
   const loadTime = async () => {
     const remainingDays = await contract.methods.getTimeBeforeStart().call();
@@ -64,7 +63,7 @@ const Countdown = () => {
     if (web3.active) {
       setContract(new web3.library.eth.Contract(abi, SEED_SALE));
     }
-  }, [web3.active, web3provider]);
+  }, [web3.active]);
 
   useEffect(async () => {
     if (contract) await loadTime();

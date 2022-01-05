@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiDownloadCloud } from '../../../utility';
-import { Coin_1, Coin_2 } from '../../../assets';
+import { Coin_1, Coin_2, Whitepaper } from '../../../assets';
 import Button from '../../../components/Button';
 import Image from '../../../components/Image';
 import { Sponsors } from '../../../data/Sponsor.data';
@@ -34,14 +34,15 @@ const About = props => {
                 </Title>
                 <Subheading as="p">{props.description}</Subheading>
                 <ButtonWrapper>
-                  <Button label="learn more" hoverBg="var(--bg-two)" hoverColor="var(--text-color)" />
-                  <Button
-                    label="Whitepaper"
-                    bgColor="var(--bg-two)"
-                    textColor="var(--text-color)"
-                    hoverColor="var(--text-color)"
-                    icon={<FiDownloadCloud className="icon" />}
-                  />
+                  <a href={Whitepaper} target="_blank" rel="noreferrer">
+                    <Button
+                      label="Whitepaper"
+                      bgColor="var(--bg-two)"
+                      textColor="var(--text-color)"
+                      hoverColor="var(--text-color)"
+                      icon={<FiDownloadCloud className="icon" />}
+                    />
+                  </a>
                 </ButtonWrapper>
               </Column>
               <Column>
