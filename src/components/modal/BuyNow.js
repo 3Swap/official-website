@@ -15,6 +15,7 @@ import { useWeb3React } from '@web3-react/core';
 import abi from '../../assets/contracts/SeedSaleABI.json';
 import { SEED_SALE } from '../../assets/contracts/addresses';
 import Swal from 'sweetalert2';
+import { networkConnector } from '../../web3/connectors';
 
 const BuyNow = () => {
   const { showModal } = useSelector(state => state.modal);
@@ -57,6 +58,10 @@ const BuyNow = () => {
       });
     }
   };
+
+  useEffect(async () => {
+    await fallbackWeb3.activate(networkConnector);
+  }, []);
 
   useEffect(async () => {
     if (contract) {
