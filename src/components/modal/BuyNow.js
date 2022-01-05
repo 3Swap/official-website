@@ -72,10 +72,10 @@ const BuyNow = () => {
   useEffect(() => {
     if (web3.active) {
       setContract(new web3.library.eth.Contract(abi, SEED_SALE));
-    } else {
+    } else if (fallbackWeb3.active) {
       setContract(new fallbackWeb3.library.eth.Contract(abi, SEED_SALE));
     }
-  }, [web3.active]);
+  }, [web3.active, fallbackWeb3.active]);
 
   useEffect(async () => {
     const _valueResponse = await fetch(
