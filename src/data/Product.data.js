@@ -2,33 +2,31 @@ import { TimeBg } from '../assets';
 import { BsTv } from '../utility';
 export const ProductData = {
   heading: 'Our Solutions',
-  subheading: 'we are making the future of token swap Interesting, earn more, enjoy more speed and flexibility.',
+  subheading: 'we are introducing a new paradigm in the decentralized finance space.',
   productInfo: [
     {
       title: 'Flexibility',
       icon: BsTv,
-      description:
-        'Flexibility Pioneer dexes like uniswap and pancake swap allow swaps of two tokens on the same chain. '
+      description: 'Swap two tokens for one across various EVM-Compatible chains.'
     },
     {
-      title: 'Speed',
+      title: 'Low Fees',
       icon: BsTv,
       description:
-        '3swap is built to swap all three tokens in one click at a faster speed it would take the native dexes to swap two. '
+        '3swap aims to be financially conducive and/or appealing by allowing you to pay less for swaps executed.'
     },
     {
-      title: 'Liquidity Provision',
+      title: 'More Rewards For Liquidity Provision',
       icon: BsTv,
-      description:
-        '3swap aims to give more by allowing liquidity providers the option to add an extra token or coin into the liquidity pool. More tokens or coins in the pool, more rewards.'
+      description: '3swap aims to offer more value for the provision of liquidity across three tokens.'
     }
   ]
 };
 
 export const ProductDataTwo = {
-  title: 'Token Swap',
-  subheading: 'No registration, No hassle.',
+  title: 'Trade NFTs',
+  subheading: 'Digitalize real life assets',
   img: TimeBg,
   description:
-    '3swap decentralized exchange wont only be a decentralized exchange fortrading tokens but also for valuable asset such as NFTs. We would be providing a large number of tools for creating, mining and selling orders of NFTs on our marketplace. This would facilitate development of third party marketplace, using 3swap NFTs marketplace to buy and transfer NFTs to other Blockchain and marketplace.'
+    '3swap would extend its influence to the world of Non-Fungible Tokens by allowing you trade digitalized assets that range from arts to game cards and even publications.'
 };

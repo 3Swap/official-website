@@ -18,7 +18,6 @@ import Swal from 'sweetalert2';
 
 const BuyNow = () => {
   const { showModal } = useSelector(state => state.modal);
-  const { web3provider } = useSelector(state => state.provider);
   const dispatch = useDispatch();
   const [amount, setAmount] = useState('0');
   const [usdValue, setUsdValue] = useState(0);
@@ -33,35 +32,19 @@ const BuyNow = () => {
 
   const initiateBuy = async () => {
     try {
-      if (web3provider !== 'INJECTED') {
-        // throw new Error('No injected provider, connect Metamask or wallet provider');
-        Swal.fire({
-          title: 'Connect a Wallet',
-          text: `No injected provider, connect Metamask or wallet provider`,
-          icon: 'error',
-          confirmButtonText: 'OK'
-        });
-      } else {
-        const _sent = await contract.methods.buyAndVest().send({
-          from: web3.account,
-          value: web3.library.utils.toWei((parseFloat(amount || '0') / usdValue).toFixed(4))
-        });
-        // const tx = {
-        //   from: web3.account ? web3.account : '',
-        //   value: web3.library.utils.toWei((parseFloat(amount || '0') / usdValue).toFixed(4)),
-        //   data
-        // };
-        // const _signed = await web3.library.eth.accounts.signTransaction(tx);
-        // const _sent = await web3.library.eth.sendSignedTransaction(_signed.rawTransaction);
-        // alert(`Transaction executed. Hash: ${_sent.transactionHash}`);
-        Swal.fire({
-          title: 'Transaction Successful',
-          text: `Transaction executed. Hash: ${_sent.transactionHash}`,
-          icon: 'success',
-          confirmButtonText: 'OK'
-        });
-      }
+      const _sent = await contract.methods.buyAndVest().send({
+        from: web3.account ? web3.account : '',
+        value: web3.library.utils.toWei((parseFloat(amount || '0') / usdValue).toFixed(4)),
+        gas: web3.library.utils.toWei('0.00003', 'gwei')
+      });
+      Swal.fire({
+        title: 'Transaction Successful',
+        html: `Transaction executed. <a href="https://bscscan.com/tx/${_sent.transactionHash}">View on explorer</a>`,
+        icon: 'success',
+        confirmButtonText: 'OK'
+      });
     } catch (error) {
+      console.log(error);
       // alert(error.message);
       Swal.fire({
         title: 'Error!',

@@ -65,13 +65,13 @@ const Product = props => {
             </Title>
             <Heading>{ProductDataTwo.subheading}</Heading>
             <Subheading>{ProductDataTwo.description}</Subheading>
-            <Button
+            {/* <Button
               label="Try Demo"
               bgColor="var(--bg-two)"
               textColor="var(--text-color)"
               hoverBg="var(--text-color)"
               hoverColor="var(--bg-one)"
-            />
+            /> */}
             <ImageWrapper>
               <Image img={ProductDataTwo.img} alt="countdown" />
               <Image img={ProductDataTwo.img} alt="countdown" />
@@ -86,12 +86,14 @@ const Product = props => {
               <Column flex="0.7">
                 <SectionPadding>
                   <Title as="h1" size="sm" textColor="var(--bg-one)" bold>
-                    <span>Participate</span> in our ICO
+                    <span>Participating</span> in our sales & token distribution
                   </Title>
                   <Subheading as="p" className="sub">
-                    3swap native token(SAP) would be giving to investors during the ICO immediately after purchasing.
-                    3swap(SAP) token would be used for liquidity, governance and our upcoming NFT project.We are new and
-                    catchy, invest in us now and get ready for a massive ROI.
+                    The 3Swap native token (SAP) can be purchased directly on our platform after which the purchased
+                    tokens would be locked and be released at intervals (this is to imbue value). There is a two-month
+                    cliff from the moment the sale ends and subsequent one-month cliffs after that. 5% of the purchased
+                    tokens would be released during these intervals which would last for a year. At the end of the year,
+                    buyers would be able to withdraw their entire locked tokens.
                   </Subheading>
                   <Button
                     label="Buy Now"

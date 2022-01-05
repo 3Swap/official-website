@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useWeb3React } from '@web3-react/core';
-import { useSelector, useDispatch } from 'react-redux';
-import { injectedProvider, networkProvider } from '../redux/providersSlice';
 import Image from './Image';
 import { Logo } from '../assets';
 import { FaBars } from '../utility';
@@ -10,32 +8,23 @@ import { MobileIcon, NavBtn, Navcontent, NavItem, NavLinks, NavMenu, NavWrapper 
 import { NavLinks as Navigation } from '../data/Navlink.data';
 import { Column, Container, NavLink, Row } from '../utility/GlobalStyle';
 import Button from './Button';
-import { injectedConnector, networkConnector } from '../web3/connectors';
+import { injectedConnector } from '../web3/connectors';
 
 const Navbar = ({ toggle }) => {
   const web3 = useWeb3React();
   const [account, setAccount] = useState('');
-  const dispatch = useDispatch();
-  const { web3provider } = useSelector(state => state.provider);
 
   const injectWeb3 = async () => {
-    if (!web3.active || web3provider === 'NETWORK') {
+    if (!web3.active) {
       await web3.activate(injectedConnector);
-      dispatch(injectedProvider());
     } else {
       web3.deactivate();
-      await web3.activate(networkConnector);
-      dispatch(networkProvider());
     }
   };
 
   useEffect(() => {
-    if (web3.active && web3provider === 'INJECTED') {
-      setAccount(web3.account ? web3.account : '');
-    } else {
-      setAccount('');
-    }
-  }, [web3.active, web3provider]);
+    setAccount(web3.account ? web3.account : '');
+  }, [web3.account]);
 
   useEffect(() => {
     if (window.ethereum) {

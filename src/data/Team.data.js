@@ -1,4 +1,4 @@
-import { Team_1, Team_2, Team_3, Team_4 } from '../assets';
+import { Team_1, Team_2, Team_3, Team_4, Team_5 } from '../assets';
 export const TeamData = {
   team: [
     {
@@ -21,13 +21,13 @@ export const TeamData = {
       }
     },
     {
-      name: 'Team Member 3',
+      name: 'Akereja Taiwo',
       position: 'Chief Marketing Officer',
       pics: Team_3,
       socialLink: {
-        twitter: '',
-        linkedln: '',
-        github: ''
+        twitter: 'https://twitter.com/AkerejaTaiwo',
+        linkedln: 'https://www.linkedin.com/in/akereja-taiwo-3a978218a',
+        github: 'https://github.com/Ajt123-del'
       }
     },
     {
@@ -38,26 +38,16 @@ export const TeamData = {
         twitter: 'https://www.twitter.com/KueBarinor',
         linkedln: 'https://www.linkedin.com/in/kue-barinor-paul-0793a3b3'
       }
+    },
+    {
+      name: 'Mona Paul',
+      position: 'Project Lead/Co-Founder',
+      pics: Team_5,
+      socialLink: {
+        twitter: 'https://www.twitter.com/Ahyammona',
+        github: 'https://github.com/ahyammona',
+        linkedln: 'https://www.linkedin.com/in/mona-paul-8aaa5a1a0'
+      }
     }
-    // {
-    //   name: 'Team Member 5',
-    //   position: 'Chief Operating Officer',
-    //   pics: Team_5,
-    //   socialLink: {
-    //     twitter: 'https://www.twitter.com/',
-    //     linkedln: 'https://www.linkedin.com/',
-    //     github: 'https://github.com/'
-    //   }
-    // },
-    // {
-    //   name: 'Team Member 5',
-    //   position: 'Lead Product Design',
-    //   pics: Team_6,
-    //   socialLink: {
-    //     twitter: 'https://www.twitter.com/',
-    //     linkedln: 'https://www.linkedin.com/',
-    //     github: 'https://github.com/'
-    //   }
-    // }
   ]
 };

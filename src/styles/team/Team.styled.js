@@ -97,7 +97,7 @@ export const TeamMeberInfo = styled.div`
   text-align: center;
   width: 100%;
   font-weight: 1000;
-  color: #00008b;
+  color: #fff;
   ${Heading} {
     font-size: 12px;
     font-weight: 600;

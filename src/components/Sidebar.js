@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useWeb3React } from '@web3-react/core';
-import { useDispatch, useSelector } from 'react-redux';
 import {
   SidebarContainer,
   Icon,
@@ -13,33 +12,23 @@ import {
 } from '../styles/sidebar/Sidebar.styled';
 import { Button } from './index';
 import { NavLinks } from '../data/Navlink.data';
-import { injectedConnector, networkConnector } from '../web3/connectors';
-import { injectedProvider, networkProvider } from '../redux/providersSlice';
+import { injectedConnector } from '../web3/connectors';
 
 const Sidebar = ({ isOpen, toggle }) => {
   const web3 = useWeb3React();
   const [account, setAccount] = useState('');
-  const dispatch = useDispatch();
-  const { web3provider } = useSelector(state => state.provider);
 
   const injectWeb3 = async () => {
-    if (!web3.active || web3provider === 'NETWORK') {
+    if (!web3.active) {
       await web3.activate(injectedConnector);
-      dispatch(injectedProvider());
     } else {
       web3.deactivate();
-      await web3.activate(networkConnector);
-      dispatch(networkProvider());
     }
   };
 
   useEffect(() => {
-    if (web3.active && web3provider === 'INJECTED') {
-      setAccount(web3.account ? web3.account : '');
-    } else {
-      setAccount('');
-    }
-  }, [web3.active, web3provider]);
+    setAccount(web3.account ? web3.account : '');
+  }, [web3.account]);
 
   useEffect(() => {
     if (window.ethereum) {
