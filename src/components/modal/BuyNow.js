@@ -113,7 +113,7 @@ const BuyNow = () => {
               <Column>
                 <Heading>Amount to receive (SAP):</Heading>
                 <Heading>
-                  {isNaN(rate)
+                  {isNaN(parseFloat(amount || '0') / usdValue / (rate / 10 ** 18))
                     ? 'Connect wallet to get rate'
                     : (parseFloat(amount || '0') / usdValue / (rate / 10 ** 18)).toFixed(4)}
                 </Heading>
