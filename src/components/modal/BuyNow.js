@@ -112,7 +112,11 @@ const BuyNow = () => {
               </Column>
               <Column>
                 <Heading>Amount to receive (SAP):</Heading>
-                <Heading>{(parseFloat(amount || '0') / usdValue / (rate / 10 ** 18)).toFixed(4)}</Heading>
+                <Heading>
+                  {isNaN(rate)
+                    ? 'Connect wallet to get rate'
+                    : (parseFloat(amount || '0') / usdValue / (rate / 10 ** 18)).toFixed(4)}
+                </Heading>
               </Column>
             </ModalPriceDetails>
             <Button
