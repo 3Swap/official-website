@@ -22,6 +22,7 @@ const BuyNow = () => {
   const [amount, setAmount] = useState('0');
   const [usdValue, setUsdValue] = useState(0);
   const web3 = useWeb3React();
+  const fallbackWeb3 = useWeb3React('networkConnector');
   const [contract, setContract] = useState(null);
   const [rate, setRate] = useState(0);
 
@@ -32,20 +33,22 @@ const BuyNow = () => {
 
   const initiateBuy = async () => {
     try {
-      const _sent = await contract.methods.buyAndVest().send({
-        from: web3.account ? web3.account : '',
-        value: web3.library.utils.toWei((parseFloat(amount || '0') / usdValue).toFixed(4)),
-        gas: web3.library.utils.toWei('0.00003', 'gwei')
-      });
-      Swal.fire({
-        title: 'Transaction Successful',
-        html: `Transaction executed. <a href="https://bscscan.com/tx/${_sent.transactionHash}">View on explorer</a>`,
-        icon: 'success',
-        confirmButtonText: 'OK'
-      });
+      if (!web3.active) {
+        throw new Error('Connect wallet first');
+      } else {
+        const _sent = await contract.methods.buyAndVest().send({
+          from: web3.account ? web3.account : '',
+          value: web3.library.utils.toWei((parseFloat(amount || '0') / usdValue).toFixed(4)),
+          gas: web3.library.utils.toWei('0.00003', 'gwei')
+        });
+        Swal.fire({
+          title: 'Transaction Successful',
+          html: `Transaction executed. <a href="https://bscscan.com/tx/${_sent.transactionHash}">View on explorer</a>`,
+          icon: 'success',
+          confirmButtonText: 'OK'
+        });
+      }
     } catch (error) {
-      console.log(error);
-      // alert(error.message);
       Swal.fire({
         title: 'Error!',
         text: error.message,
@@ -64,6 +67,8 @@ const BuyNow = () => {
   useEffect(() => {
     if (web3.active) {
       setContract(new web3.library.eth.Contract(abi, SEED_SALE));
+    } else {
+      setContract(new fallbackWeb3.library.eth.Contract(abi, SEED_SALE));
     }
   }, [web3.active]);
 
@@ -112,11 +117,7 @@ const BuyNow = () => {
               </Column>
               <Column>
                 <Heading>Amount to receive (SAP):</Heading>
-                <Heading>
-                  {isNaN(parseFloat(amount || '0') / usdValue / (rate / 10 ** 18))
-                    ? 'Connect wallet to get rate'
-                    : (parseFloat(amount || '0') / usdValue / (rate / 10 ** 18)).toFixed(4)}
-                </Heading>
+                <Heading>{(parseFloat(amount || '0') / usdValue / (rate / 10 ** 18)).toFixed(4)}</Heading>
               </Column>
             </ModalPriceDetails>
             <Button
