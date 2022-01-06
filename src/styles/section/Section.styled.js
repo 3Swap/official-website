@@ -58,6 +58,11 @@ export const SectionPadding = styled.div`
       opacity: 0.9;
     }
   }
+  @media screen and (max-width: 375px) {
+    ${Title} {
+      font-size: 46px !important;
+    }
+  }
 `;
 
 export const SectionImageWrapper = styled.div`
