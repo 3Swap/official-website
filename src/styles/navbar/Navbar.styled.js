@@ -37,6 +37,11 @@ export const Navcontent = styled.div`
           text-align: left;
         }
       }
+      @media screen and (max-width: 375px) {
+        img {
+          left: -150px;
+        }
+      }
     }
 
     &:nth-child(2) {
