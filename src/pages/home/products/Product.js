@@ -84,9 +84,9 @@ const Product = props => {
           <Container>
             <Row>
               <Column flex="0.7">
-                <SectionPadding>
+                <SectionPadding className="infosection">
                   <Title as="h1" size="sm" textColor="var(--bg-one)" bold>
-                    <span>Participating</span> in our sales & token distribution
+                    <span>Participate</span> in our sales &amp; token distribution.
                   </Title>
                   <Subheading as="p" className="sub">
                     The 3Swap native token (SAP) can be purchased directly on our platform after which the purchased

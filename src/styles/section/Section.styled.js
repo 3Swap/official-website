@@ -16,7 +16,7 @@ export const SectionWrapper = styled.div`
   .about {
     ${Title} {
       font-size: 45px;
-      width: 400px;
+      max-width: 400px;
       line-height: 50px;
       margin-bottom: 20px;
     }
@@ -24,7 +24,7 @@ export const SectionWrapper = styled.div`
     ${Subheading} {
       font-size: 20px;
       line-height: 32px;
-      width: 300px;
+      max-width: 300px;
       opacity: 0.9;
     }
   }
@@ -47,12 +47,15 @@ export const SectionPadding = styled.div`
   @media screen and (max-width: 768px) {
     padding: 30px;
     ${Title} {
-      font-size: 80px;
+      font-size: 50px !important;
+      line-height: 60px !important;
+      margin-bottom: 20px;
     }
+
     ${Subheading} {
-      font-size: 18px;
-      line-height: 28px;
-      opacity: 0.5;
+      font-size: 20px;
+      line-height: 32px;
+      opacity: 0.9;
     }
   }
 `;
