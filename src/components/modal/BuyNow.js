@@ -89,6 +89,12 @@ const BuyNow = () => {
     dispatch(closeModal());
   };
 
+  const restrictCharacter = () => {
+    let tf = document.getElementById('amount');
+    let rx = new RegExp();
+    rx = /[^.0-9]/gi;
+    tf.value = tf.value.replace(rx, '');
+  };
   return (
     <>
       {showModal && (
@@ -112,7 +118,9 @@ const BuyNow = () => {
                 onChange={e => setAmount(e.target.value.slice(0, 10))}
                 value={amount}
                 name="amount"
+                id="amount"
                 autoComplete="off"
+                onKeyUp={restrictCharacter}
               />
             </ModalContent>
             <ModalPriceDetails>

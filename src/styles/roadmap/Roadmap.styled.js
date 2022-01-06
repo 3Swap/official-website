@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Heading, Subheading } from '../../utility/GlobalStyle';
+import { Heading, Subheading, Title } from '../../utility/GlobalStyle';
 
 export const RoadmapWrapper = styled.div`
   background: radial-gradient(49.07% 107.58% at -3.08% 104.57%, rgba(0, 115, 180, 0.2) 10.95%, rgba(0, 0, 0, 0) 100%),
@@ -12,18 +12,29 @@ export const RoadmapWrapper = styled.div`
   padding-bottom: 100px;
 
   @media screen and (max-width: 768px) {
-    display: none;
+    padding-bottom: 400px;
   }
 `;
 
 export const RoadmapHeader = styled.div`
   margin-bottom: 80px;
+  @media screen and (max-width: 768px) {
+    margin: 40px 0px;
+    ${Title} {
+      line-height: 45px;
+    }
+  }
 `;
 export const RoadmapContainer = styled.div`
   display: flex;
   padding: 80px 0px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 export const RoadmapStage = styled.div`
   background: ${({ bg }) => bg || 'var(--bg-two)'};
@@ -77,6 +88,13 @@ export const RoadmapMilstone = styled.div`
     padding-bottom: 5px;
     color: #ccc;
   }
+  @media screen and (max-width: 768px) {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-position: inside;
+    }
+  }
 `;
 
 export const RoadmapItem = styled.div`
@@ -88,6 +106,7 @@ export const RoadmapItem = styled.div`
   border-radius: 110px 110px 0 0;
   border-bottom: 0;
   position: relative;
+
   &:nth-child(odd) {
     transform: matrix(-1, 0, 0, -1, 0, 0);
     position: relative;
@@ -99,6 +118,22 @@ export const RoadmapItem = styled.div`
       transform: matrix(-1, 0, 0, -1, 0, 0);
       position: absolute;
       bottom: 112px;
+    }
+    @media screen and (max-width: 768px) {
+      transform: matrix(0, -1, 1, 0, 0, 0);
+      position: relative;
+      left: -70px !important;
+      ${RoadmapStage} {
+        transform: translate(50%, 50px) matrix(0, 1, -1, 0, 0, 0);
+        position: absolute;
+        bottom: 20px !important;
+      }
+      ${RoadmapContent} {
+        transform: matrix(0, 1, -1, 0, 0, 0);
+        position: absolute;
+        bottom: -160px;
+        width: 100%;
+      }
     }
   }
   &:first-child::before {
@@ -132,19 +167,87 @@ export const RoadmapItem = styled.div`
       position: absolute;
       top: 190px;
     }
+    @media screen and (max-width: 768px) {
+      transform: matrix(0, 1, -1, 0, 0, 0);
+      position: relative;
+      top: 88px;
+      left: 30px !important;
+      ${RoadmapStage} {
+        transform: matrix(0, -1, 1, 0, 0, 0);
+        right: 50px;
+        bottom: -25px;
+        position: absolute;
+      }
+      ${RoadmapContent} {
+        transform: matrix(0, -1, 1, 0, 0, 0);
+        top: 130px;
+        right: 25px;
+      }
+    }
+    @media screen and (max-width: 375px) {
+      ${RoadmapContent} {
+        transform: matrix(0, -1, 1, 0, 0, 0);
+        top: 110px;
+        right: 25px;
+      }
+      ${RoadmapStage} {
+        transform: matrix(0, -1, 1, 0, 0, 0);
+        right: 50px;
+        bottom: -20px;
+        position: absolute;
+      }
+    }
   }
 
   &:nth-child(1) {
     left: 0;
   }
+  &:nth-child(2) {
+    @media screen and (max-width: 768px) {
+      left: 25px !important;
+      ${RoadmapContent} {
+        top: 120px;
+        right: 20px;
+      }
+    }
+    @media screen and (max-width: 375px) {
+      ${RoadmapContent} {
+        top: 100px;
+      }
+    }
+  }
   &:nth-child(3) {
     right: 0;
+    @media screen and (max-width: 768px) {
+      top: 174px !important;
+      left: -50px !important;
+      ${RoadmapContent} {
+        top: 120px;
+        right: 10px;
+      }
+    }
   }
   &:nth-child(4) {
     left: -60px;
+    @media screen and (max-width: 768px) {
+      top: 262px !important;
+      left: 45px !important;
+      ${RoadmapContent} {
+        top: 120px;
+        right: 30px;
+      }
+    }
   }
   &:nth-child(5) {
     left: -80px;
+    @media screen and (max-width: 768px) {
+      top: 350px !important;
+      left: -45px !important;
+      ${RoadmapContent} {
+        top: 120px;
+        right: 10px;
+      }
+    }
   }
   &:nth-child(6) {
     left: -100px;

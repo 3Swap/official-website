@@ -94,7 +94,7 @@ export const Heading = styled.div`
       : '16px'};
 `;
 export const Subheading = styled.div`
-  text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'capitalize')};
+  text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : '')};
   font-size: ${props =>
     props.size === 'sm'
       ? 'var(--font-sm)'

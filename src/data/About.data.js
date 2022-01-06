@@ -1,6 +1,6 @@
 import { Star, LogoBg } from '../assets';
 export const Aboutus = {
-  topheading: 'About us',
+  topheading: 'About',
   heading: '3swap',
   imgBg: Star,
   img: LogoBg,

@@ -191,6 +191,15 @@ export const ImageWrapper = styled.div`
 
 export const InfoSectionWrapper = styled.div`
   margin: 0px auto;
+  .infosection {
+    ${Title} {
+      max-width: 19ch;
+      line-height: 55px;
+    }
+    .sub {
+      text-transform: initial;
+    }
+  }
   @media screen and (max-width: 768px) {
     text-align: center;
 
@@ -210,7 +219,8 @@ export const InfoSectionWrapper = styled.div`
     }
     @media screen and (max-width: 768px) {
       text-align: center;
-      font-size: 3rem;
+      font-size: 2.5rem !important;
+      line-height: 50px !important;
       padding-bottom: 10px;
     }
   }
@@ -224,6 +234,7 @@ export const InfoSectionWrapper = styled.div`
     @media screen and (max-width: 768px) {
       font-size: var(--font-mb);
       line-height: 26px;
+      text-align: center !important;
     }
   }
 

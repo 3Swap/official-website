@@ -39,7 +39,7 @@ export const TeamMeber = styled.div`
   .teamImg {
     width: 100%;
     height: 300px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 25px;
   }
   .team {
@@ -91,12 +91,12 @@ export const SocialIcon = styled.div`
 `;
 export const TeamMeberInfo = styled.div`
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 100%;
-  font-weight: 1000;
+  font-weight: 600;
   color: #fff;
   ${Heading} {
     font-size: 12px;

@@ -21,13 +21,13 @@ export const TeamData = {
       }
     },
     {
-      name: 'Akereja Taiwo',
+      name: 'Bona-venture M. Chibuzor',
       position: 'Chief Marketing Officer',
       pics: Team_3,
       socialLink: {
-        twitter: 'https://twitter.com/AkerejaTaiwo',
-        linkedln: 'https://www.linkedin.com/in/akereja-taiwo-3a978218a',
-        github: 'https://github.com/Ajt123-del'
+        twitter: 'https://www.twitter.com/bonaventure_btc',
+        linkedln: 'http://www.linkedin.com/in/bonaventure-chibby-1519b0168',
+        github: ''
       }
     },
     {
@@ -41,7 +41,7 @@ export const TeamData = {
     },
     {
       name: 'Mona Paul',
-      position: 'Project Lead/Co-Founder',
+      position: 'Project Lead/Co-founder',
       pics: Team_5,
       socialLink: {
         twitter: 'https://www.twitter.com/Ahyammona',

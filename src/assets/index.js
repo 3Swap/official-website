@@ -17,7 +17,7 @@ export { default as TimeBg } from './images/time.webp';
 export { default as Dart } from './images/dart.webp';
 export { default as Team_1 } from './team/james_emmah.webp';
 export { default as Team_2 } from './team/kingsley_victor.webp';
-export { default as Team_3 } from './team/akereja_taiwo.webp';
+export { default as Team_3 } from './team/bonaventure.webp';
 export { default as Team_4 } from './team/barinor_kue.webp';
 export { default as Team_5 } from './team/mona_paul.webp';
 export { default as FooterLogoBg } from './images/footer_logo.png';
