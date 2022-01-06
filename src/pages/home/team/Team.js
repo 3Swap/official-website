@@ -25,11 +25,7 @@ const Team = props => {
             <TeamContainer>
               {props.team.map((user, i) => (
                 <TeamMeber key={i}>
-                  <Image
-                    img="https://www.kindpng.com/picc/m/421-4212275_transparent-default-avatar-png-avatar-img-png-download.png"
-                    alt={user.name}
-                    className="teamImg"
-                  />
+                  <Image img={user.pics} alt={user.name} className="teamImg" />
                   <div className="team">
                     <SocialIcon>
                       {user.socialLink.twitter && (
