@@ -90,8 +90,8 @@ const BuyNow = () => {
   };
 
   const restrictCharacter = () => {
-    var tf = document.getElementById('amount');
-    var rx = new RegExp();
+    let tf = document.getElementById('amount');
+    let rx = new RegExp();
     rx = /[^.0-9]/gi;
     tf.value = tf.value.replace(rx, '');
   };

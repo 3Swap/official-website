@@ -41,7 +41,7 @@ export const TeamData = {
     },
     {
       name: 'Mona Paul',
-      position: 'Project Lead/Co-Founder',
+      position: 'Project Lead/Co-founder',
       pics: Team_5,
       socialLink: {
         twitter: 'https://www.twitter.com/Ahyammona',
