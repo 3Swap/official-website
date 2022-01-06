@@ -90,7 +90,9 @@ export const RoadmapMilstone = styled.div`
   }
   @media screen and (max-width: 768px) {
     ul {
-      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      list-style-position: inside;
     }
   }
 `;
@@ -217,7 +219,7 @@ export const RoadmapItem = styled.div`
   &:nth-child(3) {
     right: 0;
     @media screen and (max-width: 768px) {
-      top: 175px !important;
+      top: 174px !important;
       left: -50px !important;
       ${RoadmapContent} {
         top: 120px;
@@ -228,7 +230,7 @@ export const RoadmapItem = styled.div`
   &:nth-child(4) {
     left: -60px;
     @media screen and (max-width: 768px) {
-      top: 263px !important;
+      top: 262px !important;
       left: 45px !important;
       ${RoadmapContent} {
         top: 120px;
@@ -239,7 +241,7 @@ export const RoadmapItem = styled.div`
   &:nth-child(5) {
     left: -80px;
     @media screen and (max-width: 768px) {
-      top: 352px !important;
+      top: 350px !important;
       left: -45px !important;
       ${RoadmapContent} {
         top: 120px;
