@@ -21,6 +21,7 @@ scroll-behavior: smooth;
     color:#fff;
     font-size:16px;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 img{
     max-width: 100%;
