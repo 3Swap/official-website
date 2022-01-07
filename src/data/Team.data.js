@@ -6,8 +6,8 @@ export const TeamData = {
       position: 'Founder/CEO',
       pics: Team_1,
       socialLink: {
-        twitter: '',
-        linkedln: ''
+        twitter: 'https://www.twitter.com/HighrankinEmmah/',
+        linkedln: 'https://www.linkedin.com/in/jamesemmah'
       }
     },
     {
