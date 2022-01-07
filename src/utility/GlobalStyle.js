@@ -21,6 +21,14 @@ scroll-behavior: smooth;
     color:#fff;
     font-size:16px;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
 }
 img{
     max-width: 100%;
