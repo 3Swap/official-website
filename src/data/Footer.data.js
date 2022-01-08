@@ -4,7 +4,7 @@ export const FooterData = {
     {
       label: 'facebook',
       icon: FiFacebook,
-      url: '/'
+      url: 'https://www.facebook.com/3swapdex/'
     },
     {
       label: 'linkedln',
@@ -14,7 +14,7 @@ export const FooterData = {
     {
       label: 'twitter',
       icon: FiTwitter,
-      url: '/'
+      url: 'https://twitter.com/3swapdex'
     },
     {
       label: 'instgram',
@@ -34,7 +34,7 @@ export const FooterData = {
     {
       label: 'telegram',
       icon: FaTelegramPlane,
-      url: '/'
+      url: 'https://t.me/dex_3SwapOfficial'
     }
   ]
 };
