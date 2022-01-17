@@ -12,8 +12,8 @@ import { Background, ModalWrapper, Heading, Column } from '../../utility/GlobalS
 import { Button, Input } from '../index';
 import { closeModal } from '../../redux/toggleSlice';
 import { useWeb3React } from '@web3-react/core';
-import abi from '../../assets/contracts/SeedSaleABI.json';
-import { SEED_SALE } from '../../assets/contracts/addresses';
+import abi from '../../assets/contracts/InitialSaleABI.json';
+import { INITIAL_SALE } from '../../assets/contracts/addresses';
 import Swal from 'sweetalert2';
 import { networkConnector } from '../../web3/connectors';
 
@@ -71,9 +71,9 @@ const BuyNow = () => {
 
   useEffect(() => {
     if (web3.active) {
-      setContract(new web3.library.eth.Contract(abi, SEED_SALE));
+      setContract(new web3.library.eth.Contract(abi, INITIAL_SALE));
     } else if (fallbackWeb3.active) {
-      setContract(new fallbackWeb3.library.eth.Contract(abi, SEED_SALE));
+      setContract(new fallbackWeb3.library.eth.Contract(abi, INITIAL_SALE));
     }
   }, [web3.active, fallbackWeb3.active]);
 

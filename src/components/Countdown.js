@@ -11,8 +11,8 @@ import {
 } from '../styles/countdown/Countdown.styled';
 import { Heading } from '../utility/GlobalStyle';
 import Button from './Button';
-import abi from '../assets/contracts/SeedSaleABI.json';
-import { SEED_SALE } from '../assets/contracts/addresses';
+import abi from '../assets/contracts/InitialSaleABI.json';
+import { INITIAL_SALE } from '../assets/contracts/addresses';
 import { networkConnector } from '../web3/connectors';
 
 const Countdown = () => {
@@ -61,7 +61,7 @@ const Countdown = () => {
 
   useEffect(() => {
     if (web3.active) {
-      setContract(new web3.library.eth.Contract(abi, SEED_SALE));
+      setContract(new web3.library.eth.Contract(abi, INITIAL_SALE));
     }
   }, [web3.active]);
 
@@ -77,7 +77,7 @@ const Countdown = () => {
       <CountdownContainerWrapper>
         <CountdownWrapper>
           <CountdownHeading>
-            <Heading>PRE-SALE STARTS IN</Heading>
+            <Heading>INITIAL PUBLIC-SALE STARTS IN</Heading>
           </CountdownHeading>
           <CountdownContainer>
             <Timer>
