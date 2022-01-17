@@ -57,6 +57,7 @@ const About = props => {
             <Row>
               <Column>
                 <BrandContainer>
+                  <span>Supported By</span>
                   {Sponsors.map((props, i) => (
                     <SectionLink href={props.url} key={i} target="_blank">
                       <Image img={props.logo} alt={props.name} />

@@ -9,7 +9,7 @@ import {
   CountdownHeading,
   Timer
 } from '../styles/countdown/Countdown.styled';
-import { Heading } from '../utility/GlobalStyle';
+import { Heading, NavLink } from '../utility/GlobalStyle';
 import Button from './Button';
 import abi from '../assets/contracts/InitialSaleABI.json';
 import { INITIAL_SALE } from '../assets/contracts/addresses';
@@ -98,14 +98,25 @@ const Countdown = () => {
             </Timer>
           </CountdownContainer>
         </CountdownWrapper>
-        <Button
-          label="Buy now"
-          bgColor="var(--bg-two)"
-          textColor="var(--text-color)"
-          hoverBg="var(--text-color)"
-          hoverColor="var(--bg-one)"
-          onClick={handleOpenModal}
-        />
+        <div className="buttonwrapper">
+          <Button
+            label="Buy now"
+            bgColor="var(--bg-two)"
+            textColor="var(--text-color)"
+            hoverBg="var(--text-color)"
+            hoverColor="var(--bg-one)"
+            onClick={handleOpenModal}
+          />
+          <NavLink to="/app">
+            <Button
+              label="Try Demo"
+              bgColor="var(--bg-two)"
+              textColor="var(--text-color)"
+              hoverBg="var(--text-color)"
+              hoverColor="var(--bg-one)"
+            />
+          </NavLink>
+        </div>
       </CountdownContainerWrapper>
     </>
   );

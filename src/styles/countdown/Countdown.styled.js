@@ -10,6 +10,10 @@ export const CountdownContainerWrapper = styled.div`
     max-width: 100%;
     padding: 0px 20px;
   }
+
+  .buttonwrapper {
+    display: flex;
+  }
 `;
 export const CountdownWrapper = styled.div`
   display: flex;

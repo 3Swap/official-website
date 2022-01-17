@@ -104,16 +104,22 @@ export const BrandContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0px auto;
   max-width: 1000px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 30px;
   background: #ffffff;
   padding: 15px 0px;
-  box-shadow: 2px 7px 5px rgba(11, 19, 25, 0.05);
-  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(11, 19, 25, 0.05);
+  border-radius: 5px;
+  span {
+    margin-left: 20px;
+    font-weight: 600;
+    color: var(--bg-one);
+  }
   img {
-    margin: 0px 20px;
+    height: 20px;
+    width: 100px;
+    object-fit: contain;
   }
 `;
