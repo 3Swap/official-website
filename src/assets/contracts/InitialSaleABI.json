@@ -107,7 +107,7 @@
           { "internalType": "uint256", "name": "_withdrawalAmount", "type": "uint256" },
           { "internalType": "uint256", "name": "_lockDuration", "type": "uint256" }
         ],
-        "internalType": "struct SeedSaleAndVesting.VestingDetail",
+        "internalType": "struct InitialPublicSaleAndVesting.VestingDetail",
         "name": "_detail",
         "type": "tuple"
       }

@@ -20,7 +20,7 @@ export const NavLinks = [
     path: 'feature'
   },
   {
-    label: 'ICO',
+    label: 'Token Sales',
     path: 'ico'
   },
   {
