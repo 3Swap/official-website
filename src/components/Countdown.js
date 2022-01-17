@@ -77,7 +77,7 @@ const Countdown = () => {
       <CountdownContainerWrapper>
         <CountdownWrapper>
           <CountdownHeading>
-            <Heading>INITIAL PUBLIC-SALE STARTS IN</Heading>
+            <Heading>INITIAL PUBLIC SALE STARTS IN</Heading>
           </CountdownHeading>
           <CountdownContainer>
             <Timer>

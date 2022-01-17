@@ -1,15 +1,10 @@
-import { Convexity, HaggleX, Tatswap, Vefi } from '../assets';
+import { HaggleX, Tatswap, Vefi } from '../assets';
 
 export const Sponsors = [
   {
     name: 'vefi',
     logo: Vefi,
     url: 'https://www.vefinetwork.org'
-  },
-  {
-    name: 'Convexity',
-    logo: Convexity,
-    url: 'https://withconvexity.com'
   },
   {
     name: 'Tatswap',

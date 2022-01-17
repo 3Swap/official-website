@@ -4,7 +4,6 @@ export { default as LogoBg } from './images/logo_bg.png';
 export { default as DownloadIcon } from './icons/download.svg';
 export { default as Coin_1 } from './images/coin_1.png';
 export { default as Coin_2 } from './images/coin_2.png';
-export { default as Convexity } from './sponsors/convexity.png';
 export { default as Vefi } from './sponsors/vefi.png';
 export { default as Tatswap } from './sponsors/tatswap.png';
 export { default as HaggleX } from './sponsors/haggleX.png';
