@@ -95,13 +95,10 @@ const Product = props => {
                     tokens would be locked and be released at intervals (this is to imbue value).
                     <ul>
                       <li>
-                        There is a two-month cliff from the moment the sale ends and subsequent one-month cliffs after
-                        that.
+                        100% of the purchased tokens is locked upon purchase. 10% of the available tokens would be
+                        released monthly and this would go on for a year.
                       </li>
-                      <li>
-                        5% of the purchased tokens would be released during these intervals which would last for a year.
-                        At the end of the year, buyers would be able to withdraw their entire locked tokens.
-                      </li>
+                      <li>At the end of the year, buyers would be able to withdraw their entire locked tokens.</li>
                     </ul>
                   </Subheading>
                   <Button
