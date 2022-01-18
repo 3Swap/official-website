@@ -20,7 +20,7 @@ import {
 import { SectionPadding, SectionWrapper } from '../../../styles/section/Section.styled';
 
 import { Title } from '../../../utility';
-import { Column, Container, Heading, Row, Subheading } from '../../../utility/GlobalStyle';
+import { Column, Container, Heading, NavLink, Row, Subheading } from '../../../utility/GlobalStyle';
 
 const Product = props => {
   const dispatch = useDispatch();
@@ -65,13 +65,15 @@ const Product = props => {
             </Title>
             <Heading>{ProductDataTwo.subheading}</Heading>
             <Subheading>{ProductDataTwo.description}</Subheading>
-            {/* <Button
-              label="Try Demo"
-              bgColor="var(--bg-two)"
-              textColor="var(--text-color)"
-              hoverBg="var(--text-color)"
-              hoverColor="var(--bg-one)"
-            /> */}
+            <NavLink to="/app">
+              <Button
+                label="Try Demo"
+                bgColor="var(--bg-two)"
+                textColor="var(--text-color)"
+                hoverBg="var(--text-color)"
+                hoverColor="var(--bg-one)"
+              />
+            </NavLink>
             <ImageWrapper>
               <Image img={ProductDataTwo.img} alt="countdown" />
               <Image img={ProductDataTwo.img} alt="countdown" />
@@ -90,10 +92,17 @@ const Product = props => {
                   </Title>
                   <Subheading as="p" className="sub">
                     The 3Swap native token (SAP) can be purchased directly on our platform after which the purchased
-                    tokens would be locked and be released at intervals (this is to imbue value). There is a two-month
-                    cliff from the moment the sale ends and subsequent one-month cliffs after that. 5% of the purchased
-                    tokens would be released during these intervals which would last for a year. At the end of the year,
-                    buyers would be able to withdraw their entire locked tokens.
+                    tokens would be locked and be released at intervals (this is to imbue value).
+                    <ul>
+                      <li>
+                        There is a two-month cliff from the moment the sale ends and subsequent one-month cliffs after
+                        that.
+                      </li>
+                      <li>
+                        5% of the purchased tokens would be released during these intervals which would last for a year.
+                        At the end of the year, buyers would be able to withdraw their entire locked tokens.
+                      </li>
+                    </ul>
                   </Subheading>
                   <Button
                     label="Buy Now"

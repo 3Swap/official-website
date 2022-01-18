@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Title } from '../../utility';
-import { Column } from '../../utility/GlobalStyle';
+import { Column, Subheading } from '../../utility/GlobalStyle';
 
 export const TokenomicsContainer = styled.div`
   display: flex;
@@ -16,6 +16,13 @@ export const TokenomicsContainer = styled.div`
       margin-top: 20px;
       padding-bottom: 10px;
     }
+  }
+  ${Subheading} {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #ccc;
   }
 
   ${Column} {
@@ -69,6 +76,7 @@ export const WrapperContainer = styled.div`
   .column {
     @media screen and (max-width: 768px) {
       flex: 1;
+      margin-left: 30px;
     }
   }
 `;

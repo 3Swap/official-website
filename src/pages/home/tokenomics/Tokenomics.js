@@ -10,7 +10,7 @@ import {
   WrapperContainer
 } from '../../../styles/tokenomics/Tokenomics.styled';
 import { Title } from '../../../utility';
-import { Column, Container, Row } from '../../../utility/GlobalStyle';
+import { Column, Container, Row, Subheading } from '../../../utility/GlobalStyle';
 
 const Tokenomics = () => {
   return (
@@ -20,6 +20,7 @@ const Tokenomics = () => {
           <Title as="h1" bold>
             Tokenomics
           </Title>
+          <Subheading>Total Supply : 1,000,000,000 SAP</Subheading>
           <Row>
             <WrapperContainer bg={Coin_bg_left}>
               <Column flex="0.7">
@@ -29,20 +30,28 @@ const Tokenomics = () => {
             <WrapperContainer bg={Coin_bg_right}>
               <Column flex="0.3" className="column">
                 <Legend>
-                  <LegendColor color="#3A0CA3" />
-                  <LegendText>Team Reserve</LegendText>
+                  <LegendColor color="#000" />
+                  <LegendText>Token Sales</LegendText>
                 </Legend>
                 <Legend>
                   <LegendColor color="#B5179E;" />
-                  <LegendText>Air Drop</LegendText>
+                  <LegendText>Team</LegendText>
                 </Legend>
                 <Legend>
                   <LegendColor color="#00C5C9" />
-                  <LegendText>ICO</LegendText>
+                  <LegendText>Research &amp; Partnership</LegendText>
                 </Legend>
                 <Legend>
                   <LegendColor color="#F72585;" />
-                  <LegendText>Giveaway</LegendText>
+                  <LegendText>Staking, Liquidity Mining Rewards</LegendText>
+                </Legend>
+                <Legend>
+                  <LegendColor color="blue" />
+                  <LegendText>Marketing</LegendText>
+                </Legend>
+                <Legend>
+                  <LegendColor color="yellow" />
+                  <LegendText>Liquidity</LegendText>
                 </Legend>
               </Column>
             </WrapperContainer>

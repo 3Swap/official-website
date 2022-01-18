@@ -21,6 +21,8 @@ export { default as Team_4 } from './team/barinor_kue.webp';
 export { default as Team_5 } from './team/mona_paul.webp';
 export { default as FooterLogoBg } from './images/footer_logo.png';
 export { default as Logo } from './images/logo.png';
+export { default as ThreeSwap } from './images/3swap.png';
+export { default as Bg_black } from './images/bg_black.png';
 export { default as SettingImg } from './icons/cog.png';
 export { default as Threeswap } from './icons/3swap.png';
 export { default as Whitepaper } from './whitepaper.pdf';

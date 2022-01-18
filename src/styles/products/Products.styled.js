@@ -218,8 +218,8 @@ export const InfoSectionWrapper = styled.div`
       color: var(--bg-two);
     }
     @media screen and (max-width: 768px) {
-      text-align: center;
-      font-size: 2.5rem !important;
+      text-align: left;
+      font-size: 2.3rem !important;
       line-height: 50px !important;
       padding-bottom: 10px;
     }
@@ -231,10 +231,17 @@ export const InfoSectionWrapper = styled.div`
     line-height: 20px;
     max-width: 60ch;
 
+    ul {
+      margin-left: 30px;
+
+      li {
+        margin: 5px 0;
+      }
+    }
     @media screen and (max-width: 768px) {
       font-size: var(--font-mb);
       line-height: 26px;
-      text-align: center !important;
+      text-align: left !important;
     }
   }
 
