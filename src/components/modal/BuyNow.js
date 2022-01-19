@@ -40,7 +40,7 @@ const BuyNow = () => {
         const _sent = await contract.methods.buyAndVest().send({
           from: web3.account ? web3.account : '',
           value: web3.library.utils.toWei((parseFloat(amount || '0') / usdValue).toFixed(4)),
-          gas: web3.library.utils.toWei('0.00003', 'gwei')
+          gas: web3.library.utils.toWei('0.0003', 'gwei')
         });
         Swal.fire({
           title: 'Transaction Successful',
