@@ -25,7 +25,7 @@ const Countdown = () => {
   const [secondsLeft, setSecondsLeft] = useState('0');
 
   const loadTime = async () => {
-    const remainingDays = await contract.methods.getTimeBeforeStart().call();
+    const remainingDays = await contract.methods.getRemainingTime().call();
     const jsDate = new Date(Date.now() + remainingDays * 1000).getTime();
     const x = setInterval(() => {
       const now = new Date().getTime();
@@ -77,7 +77,7 @@ const Countdown = () => {
       <CountdownContainerWrapper>
         <CountdownWrapper>
           <CountdownHeading>
-            <Heading>INITIAL PUBLIC SALE STARTS IN</Heading>
+            <Heading>INITIAL PUBLIC SALE ENDS IN</Heading>
           </CountdownHeading>
           <CountdownContainer>
             <Timer>
