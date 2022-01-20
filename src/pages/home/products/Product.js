@@ -91,8 +91,9 @@ const Product = props => {
                     <span>Participate</span> in our sales &amp; token distribution.
                   </Title>
                   <Subheading as="p" className="sub">
-                    The 3Swap native token (SAP) can be purchased directly on our platform after which the purchased
-                    tokens would be locked and be released at intervals (this is to imbue value).
+                    The 3Swap native token (SAP) has been deployed on the Binance Smartchain (contract address:
+                    0xF0268c5F9aA95Baf5C25D646AAbB900Ac12F0800) & can be purchased directly on our platform after which
+                    the purchased tokens would be locked and be released at intervals (this is to imbue value).
                     <ul>
                       <li>
                         100% of the purchased tokens is locked upon purchase. 10% of the available tokens would be
